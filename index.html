@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechMartPro — Phones, Earbuds, Tablets & Gadgets</title>
+<meta name="description" content="Shop the latest iPhone, Galaxy, Pixel, earbuds, headphones, tablets and gadgets at TechMartPro. Genuine products, free shipping over $100, 30-day returns and a 1-year warranty.">
+<meta name="theme-color" content="#0b2346">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TechMartPro">
+<meta property="og:title" content="TechMartPro — Phones, Earbuds, Tablets & Gadgets">
+<meta property="og:description" content="Genuine phones and gadgets with free shipping over $100, 30-day returns and a 1-year warranty.">
+<meta property="og:image" content="og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"TechMartPro","description":"Phones, earbuds, tablets and gadgets.","logo":"logo.png"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b2346; --blue:#1673ff; --blue2:#0a4fd6; --sky:#e9f1ff;
+  --bg:#fff; --soft:#f4f5f7; --line:#e4e6ea; --text:#0f1115; --muted:#6b6f78; --sale:#e5322d; --ok:#14a44d;
+  --r:14px; --head:'Inter Tight','Inter',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{-webkit-tap-highlight-color:transparent;text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:var(--body);color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1360px;margin:0 auto;padding:0 32px}
+h1,h2,h3,h4{font-family:var(--head);letter-spacing:-.02em}
+.pimg{mix-blend-mode:multiply;object-fit:contain;width:100%;height:100%}
+
+/* utility bar */
+.util{background:#0a0d14;color:#e9ebf0;font-size:12.5px}
+.util .wrap{display:flex;align-items:center;justify-content:center;height:38px;gap:34px;position:relative}
+.util span{display:flex;align-items:center;gap:7px;opacity:.92}
+.util svg{width:15px;height:15px}
+.util .rg{position:absolute;right:32px;text-decoration:underline;cursor:pointer}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;height:74px;gap:30px}
+.logo img{height:48px;width:auto}
+nav.main{display:flex;flex:1;justify-content:center;height:100%}
+nav.main .ni{display:flex;align-items:center;height:100%}
+nav.main .ni>a{font:500 14.5px/1 var(--body);padding:10px 15px;color:#1d1d1f;opacity:.88;transition:opacity .2s,color .2s}
+nav.main .ni>a:hover,nav.main .ni.open>a{opacity:1;color:var(--blue)}
+.mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);overflow:hidden;max-height:0;transition:max-height .35s cubic-bezier(.4,0,.2,1);z-index:60}
+.ni.open .mega{max-height:460px}
+.mega .mw{max-width:1040px;margin:0 auto;padding:34px 32px 44px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;opacity:0;transform:translateY(-6px);transition:opacity .25s,transform .3s}
+.ni.open .mega .mw{opacity:1;transform:none;transition-delay:.08s}
+.mega h6{font:500 12px var(--body);color:#6e6e73;margin-bottom:14px}
+.mega .big a{display:block;font:600 22px/1.25 var(--head);color:#1d1d1f;padding:5px 0;letter-spacing:-.01em}
+.mega .sm a{display:block;font:500 13.5px/1.3 var(--body);color:#333;padding:6px 0}
+.mega a:hover{color:var(--blue)}
+.navscrim{position:fixed;inset:0;top:0;z-index:45;background:rgba(232,236,242,.5);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.navscrim.on{opacity:1;visibility:visible}
+.hicons{display:flex;gap:4px;align-items:center;color:var(--navy)}
+.hicons button{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;position:relative}
+.hicons button:hover{background:var(--soft)}
+.hicons svg{width:21px;height:21px}
+.ccount{position:absolute;top:4px;right:3px;background:var(--blue);color:#fff;font:700 10px/16px var(--head);min-width:16px;height:16px;border-radius:8px;text-align:center;padding:0 4px;transform:scale(0);transition:transform .25s}
+.ccount.on{transform:scale(1)}
+.burger{display:none!important}
+
+/* buttons & badges */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 14px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;padding:17px 34px;border-radius:999px;transition:transform .12s,background .2s,color .2s,box-shadow .2s;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn.pri{background:var(--blue);color:#fff;box-shadow:0 10px 26px -10px #1673ffaa}
+.btn.pri:hover{background:var(--blue2)}
+.btn.dk{background:var(--navy);color:#fff}
+.btn.dk:hover{background:var(--blue)}
+.btn.ol{border:1.5px solid var(--navy);color:var(--navy)}
+.btn.ol:hover{background:var(--navy);color:#fff}
+.badge{display:inline-flex;align-items:center;gap:5px;font:700 11px/1 var(--head);letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border-radius:6px}
+.badge.hot{background:linear-gradient(90deg,#ff5a1f,#ff8a00);color:#fff}
+.badge.sale{background:var(--sale);color:#fff}
+.badge.new{background:var(--navy);color:#fff}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.slides{position:relative;height:clamp(540px,62vw,680px)}
+.slide{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1.15fr;align-items:center;opacity:0;visibility:hidden;transition:opacity .9s}
+.slide.on{opacity:1;visibility:visible}
+.slide .copy{padding-left:max(32px,calc((100vw - 1360px)/2 + 32px));position:relative;z-index:2}
+.slide h1{font-size:clamp(44px,5.6vw,84px);font-weight:700;line-height:1;margin:20px 0 18px}
+.slide p.tl{font-size:clamp(16px,1.4vw,20px);color:#3b4252;max-width:480px;line-height:1.5}
+.slide .pr{margin:26px 0 30px;font:600 22px var(--head);color:var(--navy)}
+.slide .pr s{color:#8a8f99;font-weight:500;font-size:17px;margin-left:8px}
+.slide .acts{display:flex;gap:12px;flex-wrap:wrap}
+.slide .art{position:relative;height:100%;display:flex;align-items:center;justify-content:center}
+.slide .art img{max-height:86%;max-width:92%;mix-blend-mode:multiply;transform:translateY(16px) scale(.98);transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.slide.on .art img{transform:none}
+.dots{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:5}
+.dots button{width:30px;height:4px;border-radius:2px;background:#0b234633;transition:.3s}
+.dots button.on{background:var(--navy);width:54px}
+.harrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:46px;height:46px;border-radius:50%;background:#ffffffcc;display:grid;place-items:center;color:var(--navy);box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.harrow:hover{background:#fff}
+.harrow.l{left:22px}.harrow.r{right:22px}
+
+
+/* sliding panel hero */
+.vhero{padding:16px 16px 0;position:relative}
+.vview{overflow:hidden;border-radius:28px;position:relative;touch-action:pan-y}
+.vtrack{display:flex;transition:transform 1s cubic-bezier(.7,0,.2,1)}
+.vs{flex:0 0 100%;height:clamp(600px,80vh,760px);position:relative;overflow:hidden;background:var(--c)}
+.vs::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 55% at 50% 45%,#ffffff40,transparent 70%)}
+.vs .word{position:absolute;left:0;right:0;top:6%;text-align:center;font:800 min(calc(90vw / (var(--len) * .64)),175px)/.9 var(--head);letter-spacing:-.045em;color:#fff;text-transform:uppercase;white-space:nowrap;pointer-events:none;opacity:0;transform:translateY(40px);transition:opacity .8s .4s,transform 1.1s .4s cubic-bezier(.2,.8,.2,1);text-shadow:0 10px 40px rgba(0,0,0,.06)}
+.vs.on .word{opacity:.95;transform:none}
+.vs .ph{position:absolute;left:50%;top:50%;height:38%;width:80%;transform:translate(-50%,-50%) scale(.82);opacity:0;transition:transform 1.2s .3s cubic-bezier(.2,.8,.2,1),opacity .8s .3s;display:flex;align-items:center;justify-content:center}
+.vs.on .ph{transform:translate(-50%,-50%) scale(1);opacity:1}
+.vs .ph img{height:100%;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 40px 46px rgba(10,20,40,.35));animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px)}}
+.vs .meta{position:absolute;left:0;right:0;bottom:46px;text-align:center;color:#fff;opacity:0;transform:translateY(24px);transition:opacity .7s .7s,transform .8s .7s cubic-bezier(.2,.8,.2,1)}
+.vs.on .meta{opacity:1;transform:none}
+.vs .meta h2{font:800 clamp(26px,2.6vw,38px) var(--head);text-shadow:0 2px 14px #0002}
+.vs .meta .pp{font:600 17px var(--head);margin:4px 0 6px}.vs .meta .pp s{opacity:.7;margin-left:6px;font-weight:500}
+.vs .meta p{max-width:460px;margin:0 auto 18px;font-size:14.5px;line-height:1.5;opacity:.95}
+.vs .meta .acts{display:flex;gap:10px;justify-content:center}
+.vs .meta .btn{padding:15px 28px;font-size:12.5px}
+.btn.wh{background:#fff;color:var(--navy)}.btn.wh:hover{background:var(--navy);color:#fff}
+.btn.glass{border:1.5px solid #ffffffb0;color:#fff;backdrop-filter:blur(6px)}.btn.glass:hover{background:#ffffff2e}
+.vs .bdg{position:absolute;top:22px;left:24px}
+.vs .cnt{position:absolute;top:24px;right:26px;color:#fff;font:600 13px var(--head);opacity:.85}
+.vnav{position:absolute;top:50%;z-index:4;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:#ffffff40;backdrop-filter:blur(8px);color:#fff;font-size:24px;display:grid;place-items:center;transition:.2s}
+.vnav:hover{background:#fff;color:var(--navy)}.vnav.l{left:34px}.vnav.r{right:34px}
+.vdots{display:flex;justify-content:center;gap:8px;padding:16px 0 2px}
+.vdots button{width:28px;height:4px;border-radius:2px;background:#0b234626;position:relative;overflow:hidden;transition:width .3s}
+.vdots button.on{width:62px}
+.vdots button.on i{position:absolute;inset:0;background:var(--navy);transform-origin:left;animation:fill 5.5s linear forwards}
+@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (max-width:860px){
+ .vhero{padding:10px 10px 0}.vs{height:640px}.vview{border-radius:22px}
+ .vs .ph{top:44%;height:33%;width:88%}.vs .word{top:11%;font-size:min(calc(80vw / (var(--len) * .64)),120px)}.vnav{display:none}
+ .vs .meta{bottom:30px;padding:0 16px}
+}
+
+
+/* robust square image boxes (Safari-safe) */
+.card .im,.cat .ci,.mega .th,.ci .th,.gal .main,.gal .thumbs button{position:relative;aspect-ratio:auto!important;height:auto;padding:0!important;display:block}
+.card .im::before,.cat .ci::before,.mega .th::before,.ci .th::before,.gal .main::before,.gal .thumbs button::before{content:"";display:block;padding-top:100%}
+.card .im>img,.cat .ci>img,.mega .th>img,.ci .th>img{position:absolute;top:var(--ip);left:var(--ip);width:calc(100% - 2*var(--ip));height:calc(100% - 2*var(--ip));object-fit:contain;object-position:center}
+.card .im{--ip:6%}.cat .ci{--ip:4%}.mega .th{--ip:8%}.ci .th{--ip:6%}
+.gal .main>.view,.gal .thumbs button>.view{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.gal .main>.view img,.gal .thumbs .view img{width:88%;height:88%;object-fit:contain;padding:0}
+.cat{display:flex;flex-direction:column;align-items:stretch}
+.cat .ci{width:100%;margin-bottom:12px;background:transparent}
+.sline .th img,.sres .th img,.stickybar .th img{width:100%;height:100%;object-fit:contain}
+
+
+/* ===== NEW FEATURES ===== */
+.skip{position:absolute;left:12px;top:-60px;z-index:300;background:var(--navy);color:#fff;padding:10px 16px;border-radius:8px;font-weight:600;transition:top .2s}
+.skip:focus{top:12px}
+:focus-visible{outline:3px solid #1673ff;outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* toolbar */
+.tools{display:flex;gap:10px;align-items:center;margin:-8px 0 24px;flex-wrap:wrap}
+.tools .grp{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sel{appearance:none;-webkit-appearance:none;border:1.5px solid var(--line);border-radius:999px;padding:10px 36px 10px 16px;font:600 13px var(--head);background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%230b2346' stroke-width='3'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center;cursor:pointer;color:var(--navy)}
+.sel:hover{border-color:var(--navy)}
+.fchip{border:1.5px solid var(--line);border-radius:999px;padding:9px 14px;font:600 12.5px var(--head);color:var(--navy);background:#fff;transition:.15s}
+.fchip:hover{border-color:var(--navy)}
+.fchip.on{background:var(--sky);border-color:var(--blue);color:var(--blue2)}
+.rcount{margin-left:auto;font-size:13px;color:var(--muted)}
+.clearf{font-size:13px;color:var(--blue);text-decoration:underline}
+.noresults{grid-column:1/-1;text-align:center;padding:60px 10px;color:var(--muted)}
+/* card extras */
+.card{position:relative}
+.fav{position:absolute;top:12px;right:12px;z-index:3;width:38px;height:38px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 4px 14px rgba(11,35,70,.1);transition:transform .15s}
+.fav:hover{transform:scale(1.08)}
+.fav svg{width:19px;height:19px;color:#4a505c;transition:.2s}
+.fav.on svg{fill:#e5322d;color:#e5322d}
+.fav.pop svg{animation:pop .35s}
+@keyframes pop{50%{transform:scale(1.35)}}
+.cmpchk{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);margin-top:10px;cursor:pointer;user-select:none}
+.cmpchk input{width:16px;height:16px;accent-color:var(--blue)}
+/* compare tray */
+.ctray{position:fixed;left:50%;bottom:18px;transform:translate(-50%,140%);z-index:44;background:#fff;border-radius:18px;box-shadow:0 18px 50px rgba(11,35,70,.22);padding:10px 10px 10px 14px;display:flex;align-items:center;gap:10px;transition:transform .35s cubic-bezier(.2,.8,.2,1);max-width:calc(100% - 24px)}
+.ctray:not(.on){visibility:hidden;transition:transform .35s,visibility 0s .35s}
+.ctray.on{transform:translate(-50%,0)}
+.ctray .ct{width:46px;height:46px;background:var(--soft);border-radius:10px;padding:4px;position:relative;flex:none}
+.ctray .ct img{width:100%;height:100%;object-fit:contain}
+.ctray .ct button{position:absolute;top:-6px;right:-6px;width:18px;height:18px;border-radius:50%;background:var(--navy);color:#fff;font-size:10px;line-height:18px}
+.ctray .ctxt{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.ctray .btn{padding:12px 18px;font-size:12px}
+/* compare page */
+.cmpwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:26px;border:1px solid var(--line);border-radius:16px}
+.cmpt{width:100%;border-collapse:collapse;min-width:640px;font-size:14px}
+.cmpt th,.cmpt td{padding:16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.cmpt tr:last-child td{border-bottom:0}
+.cmpt th{width:150px;color:var(--muted);font-weight:500;background:#fafbfc;position:sticky;left:0;z-index:1}
+.cmpt .ci2{width:150px;height:150px;background:var(--soft);border-radius:12px;padding:10px;margin-bottom:10px}
+.cmpt .ci2 img{width:100%;height:100%;object-fit:contain}
+.cmpt b{font:600 16px var(--head)}
+.cmpt .rm2{font-size:12px;color:var(--muted);text-decoration:underline;margin-top:6px;display:block}
+.pagehead{padding:46px 0 10px}
+.pagehead h1{font-size:clamp(30px,3.6vw,46px)}
+.pagehead p{color:var(--muted);margin-top:8px}
+.emptyp{text-align:center;padding:70px 10px}
+.emptyp p{color:var(--muted);margin:10px 0 24px}
+/* PDP options */
+.plans{display:flex;flex-direction:column;gap:8px}
+.plan{display:flex;align-items:center;gap:12px;border:1.5px solid var(--line);border-radius:12px;padding:13px 15px;cursor:pointer;font-size:14px;transition:.15s}
+.plan:hover{border-color:#9aa3b2}
+.plan.on{border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy)}
+.plan input{accent-color:var(--blue);width:17px;height:17px}
+.plan .t{flex:1}.plan small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.plan b{font-weight:600;white-space:nowrap}
+.addons{display:flex;flex-direction:column;gap:8px}
+.addon{display:flex;align-items:center;gap:12px;border:1.5px solid var(--line);border-radius:12px;padding:10px 14px;cursor:pointer;font-size:14px}
+.addon.on{border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy)}
+.addon input{accent-color:var(--blue);width:17px;height:17px}
+.addon .th{width:44px;height:44px;background:var(--soft);border-radius:8px;padding:3px;flex:none}
+.addon .th img{width:100%;height:100%;object-fit:contain}
+.addon .t{flex:1}.addon small{color:var(--sale);font-weight:600;margin-left:6px}
+.pfav{display:inline-flex;align-items:center;gap:8px;font:600 14px var(--head);color:var(--navy);margin-top:14px}
+.pfav svg{width:19px;height:19px}
+.pfav.on svg{fill:#e5322d;color:#e5322d}
+.tradelink{display:flex;align-items:center;gap:10px;background:var(--sky);border-radius:12px;padding:12px 14px;margin-top:14px;font-size:13.5px;color:var(--blue2)}
+.tradelink b{font-weight:700}
+/* trade-in */
+.trade{background:linear-gradient(135deg,#f3f7ff,#e3edfb)}
+.tgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center}
+.tsteps{display:flex;flex-direction:column;gap:16px;margin-top:26px}
+.tsteps>div{display:flex;gap:14px;align-items:flex-start}
+.tsteps i{flex:none;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font:700 14px/34px var(--head);font-style:normal;text-align:center}
+.tsteps b{font:600 16px var(--head);display:block}
+.tsteps span{color:var(--muted);font-size:14px}
+.tform{background:#fff;border-radius:20px;padding:30px;box-shadow:0 20px 50px rgba(11,35,70,.08)}
+.tform h3{font-size:22px;margin-bottom:6px}
+.tform>p{color:var(--muted);font-size:14px;margin-bottom:18px}
+.tform .btn{width:100%;margin-top:6px}
+.tdone{text-align:center;padding:30px 10px}
+.tdone .ck{width:56px;height:56px;border-radius:50%;background:#e6f6ec;color:var(--ok);display:grid;place-items:center;margin:0 auto 14px}
+/* recently viewed */
+.rvrow{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.rvi{display:block;text-align:center}
+.rvi .th{background:var(--soft);border-radius:14px;padding:12%;aspect-ratio:1;position:relative}
+.rvi .th img{width:100%;height:100%;object-fit:contain;position:absolute;inset:12%;width:76%;height:76%}
+.rvi b{display:block;font:600 13.5px var(--head);margin-top:8px}
+.rvi span{font-size:12.5px;color:var(--muted)}
+/* cart upsell */
+.upsell{margin:6px 0 4px;background:var(--soft);border-radius:14px;padding:14px}
+.upsell h5{font:600 13px var(--head);margin-bottom:10px;color:var(--navy)}
+.urow{display:flex;align-items:center;gap:12px}
+.urow .th{width:52px;height:52px;background:#fff;border-radius:10px;padding:4px;flex:none}
+.urow .th img{width:100%;height:100%;object-fit:contain}
+.urow .t{flex:1;font-size:13.5px;line-height:1.35}.urow .t span{color:var(--muted);font-size:12.5px}
+.urow button{border:1.5px solid var(--navy);color:var(--navy);border-radius:999px;padding:8px 14px;font:700 12px var(--head);white-space:nowrap}
+.urow button:hover{background:var(--navy);color:#fff}
+/* cookie */
+.cookie{position:fixed;left:18px;bottom:18px;z-index:130;background:#fff;border-radius:16px;box-shadow:0 18px 50px rgba(11,35,70,.2);padding:18px;max-width:360px;font-size:13.5px;line-height:1.55;color:#3a3f4a;transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.cookie:not(.on){visibility:hidden;transition:transform .45s,visibility 0s .45s}
+.cookie.on{transform:none}
+.cookie b{display:block;font:600 15px var(--head);color:var(--text);margin-bottom:4px}
+.cookie .row{display:flex;gap:8px;margin-top:12px}
+.cookie .btn{padding:11px 18px;font-size:12px;flex:1}
+/* 404 */
+.nf{text-align:center;padding:110px 20px 120px}
+.nf .code{font:800 clamp(90px,16vw,160px)/1 var(--head);color:var(--sky);-webkit-text-stroke:2px var(--blue)}
+.nf h1{font-size:30px;margin:16px 0 8px}.nf p{color:var(--muted);margin-bottom:26px}
+.wbtn{position:relative}
+@media (max-width:1100px){.rvrow{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:860px){
+ .tools{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:-6px -18px 18px;padding:2px 18px}
+ .tools::-webkit-scrollbar{display:none}
+ .tools .grp{flex-wrap:nowrap}.sel,.fchip{flex:none}
+ .rcount{display:none}
+ .tgrid{grid-template-columns:1fr;gap:28px}
+ .rvrow{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:42%;overflow-x:auto;scrollbar-width:none;margin:0 -18px;padding:0 18px}
+ .rvrow::-webkit-scrollbar{display:none}
+ .ctray{bottom:max(12px,env(safe-area-inset-bottom));padding:8px 8px 8px 10px}
+ .ctray .ctxt{display:none}
+ .cookie{left:12px;right:12px;bottom:12px;max-width:none}
+ .fav{width:34px;height:34px;top:10px;right:10px}
+ .cmpchk{font-size:12px}
+}
+
+
+@media (max-width:860px){
+ .sh .tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 -18px;padding:2px 18px;width:calc(100% + 36px)}
+ .sh .tabs::-webkit-scrollbar{display:none}
+ .sh .tabs button{flex:none}
+ .sh{flex-direction:column;align-items:stretch}
+ .cmpwrap{border-radius:12px;margin-top:18px}
+ .cmpt{min-width:0;font-size:13px;table-layout:fixed}
+ .cmpt th{width:86px;padding:12px 10px;font-size:12px}
+ .cmpt td{padding:12px 10px;word-wrap:break-word}
+ .cmpt .ci2{width:100%;height:auto;aspect-ratio:1}
+ .cmpt b{font-size:14px}
+ .cmpt .btn{padding:11px 10px!important;font-size:11px!important;width:100%}
+ .pagehead{padding:30px 0 4px}
+ .cookie{padding:14px 14px 12px;font-size:12.5px;line-height:1.45}
+ .cookie b{font-size:14px}
+ .cookie .row{margin-top:10px}.cookie .btn{padding:10px 12px;font-size:11.5px}
+ .ctray{padding:6px 6px 6px 8px;gap:8px;border-radius:14px}
+ .ctray .ct{width:38px;height:38px}
+ .ctray .btn{padding:11px 16px;font-size:11.5px}
+ .tform{padding:22px 18px}
+ .tsteps{gap:14px;margin-top:20px}
+ .plan{padding:12px}.plan b{font-size:13px}
+ .addon{padding:9px 10px;gap:10px}.addon .t{font-size:13px;line-height:1.3}.addon b{font-size:13px;text-align:right}.addon small{display:block;margin:2px 0 0}
+ .upsell{padding:12px}
+ .nf{padding:70px 18px 80px}.nf .btn{margin:6px 0 0!important}
+ .rcount{display:none}
+}
+@media (max-width:420px){.cmpt th{width:70px}}
+@media (max-width:860px){body.tray-on{padding-bottom:76px}}
+
+/* sections */
+section.blk{padding:88px 0}
+.sh{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:32px;flex-wrap:wrap}
+.sh h2{font-size:clamp(30px,3.2vw,44px);font-weight:700}
+.sh p{color:var(--muted);margin-top:8px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tabs button{font:600 13px var(--head);padding:11px 18px;border-radius:999px;border:1.5px solid var(--line);transition:.2s}
+.tabs button:hover{border-color:var(--navy)}
+.tabs button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* product cards */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.grid>*,.pdp>*,.co>*,.bgrid>*{min-width:0}
+.card{display:flex;flex-direction:column}
+.card .im{background:var(--soft);border-radius:var(--r);aspect-ratio:1;position:relative;overflow:hidden;padding:7%}
+.card .im img{transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.card:hover .im img{transform:scale(1.06)}
+.card .bdg{position:absolute;top:14px;left:14px;display:flex;gap:6px;z-index:2}
+.card .bd{padding:16px 2px 2px;display:flex;flex-direction:column;flex:1}
+.card .br{font:600 11.5px var(--head);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card h3{font-size:19px;font-weight:600;margin:5px 0 6px}
+.card h3 a:hover{color:var(--blue)}
+.card .ds{font-size:13.5px;color:var(--muted);line-height:1.45;min-height:39px}
+.prc{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 9px;margin-top:14px;font:700 19px var(--head)}
+.prc s{font:500 14px var(--body);color:#9a9ea7}
+.prc .off{font:700 11px var(--head);color:var(--sale)}
+.prc.sale b{color:var(--sale)}
+.card .btn{margin-top:14px;padding:14px;font-size:12.5px}
+
+/* feature split */
+.feat{display:grid;grid-template-columns:1fr 1fr;min-height:600px}
+.feat .fa{display:flex;align-items:center;justify-content:center;padding:50px}
+.feat .fa img{max-height:480px;mix-blend-mode:multiply}
+.feat .fc{display:flex;flex-direction:column;justify-content:center;padding:60px clamp(28px,6vw,100px)}
+.feat h2{font-size:clamp(34px,3.8vw,56px);font-weight:700;line-height:1.04;margin:18px 0}
+.feat p{font-size:17px;line-height:1.6;max-width:500px;color:#454b57}
+.feat .specs{display:flex;gap:34px;margin:30px 0 34px;flex-wrap:wrap}
+.feat .specs b{display:block;font:700 30px var(--head);color:var(--navy)}
+.feat .specs span{font-size:13px;color:var(--muted)}
+.feat.a{background:linear-gradient(135deg,#f3f6fb,#e4ecf8)}
+.feat.b{background:linear-gradient(135deg,#f6f3ee,#ece6dc)}
+.feat.b .fa{order:2}
+
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.cat{background:var(--soft);border-radius:var(--r);padding:18px 14px 20px;text-align:center;transition:.25s;cursor:pointer}
+.cat:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(11,35,70,.1)}
+.cat .ci{aspect-ratio:1;margin-bottom:10px;padding:8%}
+.cat b{font:600 15px var(--head)}
+.cat span{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+
+/* bundles */
+.bundles{background:var(--navy);color:#fff}
+.bundles .sh p{color:#a9b4c8}
+.bgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.bcard{background:#fff;color:var(--text);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s}
+.bcard:hover{transform:translateY(-4px)}
+.bcard .im{background:var(--soft);display:grid;grid-template-columns:repeat(3,1fr);padding:22px 12px;gap:4px;align-items:center}
+.bcard .im img{aspect-ratio:1}
+.bcard .bd{padding:20px;display:flex;flex-direction:column;flex:1}
+.bcard h3{font-size:19px;font-weight:700;margin:10px 0 6px}
+.bcard ul{list-style:none;font-size:13px;color:var(--muted);line-height:1.75;margin-bottom:8px}
+.bcard ul li::before{content:"+ ";color:var(--blue);font-weight:700}
+.bcard .save{font:600 12.5px var(--head);color:var(--ok);margin-top:4px}
+.bcard .btn{margin-top:auto;padding:14px;font-size:12.5px}
+.bcard .prc{margin-bottom:6px}
+
+/* why + benefits */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.why .w{border-radius:var(--r);padding:34px 30px;background:var(--soft)}
+.why .w .n{font:700 56px/1 var(--head);color:var(--blue)}
+.why .w h3{font-size:21px;font-weight:700;margin:14px 0 8px}
+.why .w p{color:var(--muted);line-height:1.6;font-size:14.5px}
+.benefits{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.benefits .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.benefit{display:flex;gap:16px;align-items:center;padding:32px 20px}
+.benefit+.benefit{border-left:1px solid var(--line)}
+.benefit .ic{width:50px;height:50px;border-radius:50%;background:var(--sky);color:var(--blue);display:grid;place-items:center;flex:none}
+.benefit .ic svg{width:23px;height:23px}
+.benefit b{font:700 15px var(--head)}
+.benefit span{display:block;font-size:13px;color:var(--muted);margin-top:3px}
+
+/* newsletter + footer */
+.news{background:linear-gradient(110deg,var(--navy),var(--blue2) 60%,var(--blue));color:#fff}
+.news .wrap{display:flex;align-items:center;justify-content:space-between;gap:40px;padding-top:56px;padding-bottom:56px;flex-wrap:wrap}
+.news h2{font-size:clamp(28px,3vw,40px);font-weight:700;line-height:1.08}
+.news p{margin-top:8px;opacity:.85}
+.news form{display:flex;background:#fff;border-radius:999px;padding:6px;flex:0 1 460px;min-width:min(460px,100%)}
+.news input{flex:1;border:0;outline:0;background:none;padding:0 20px;color:#111;min-width:0}
+footer{background:#06142b;color:#b7c0d0;padding:68px 0 0}
+.fgrid{display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:40px}
+.fgrid .logo img{height:56px}
+.fgrid .about{font-size:14px;line-height:1.7;margin:18px 0 22px;color:#8794aa;max-width:320px}
+footer h4{font:700 14px var(--head);color:#fff;margin-bottom:18px}
+footer ul{list-style:none}
+footer li{margin-bottom:11px;font-size:14px}
+footer li a:hover{color:#fff}
+.region{display:inline-flex;align-items:center;gap:10px;border:1px solid #23365a;border-radius:999px;padding:10px 18px;font-size:13px;color:#fff}
+.fbot{border-top:1px solid #16284a;margin-top:56px;padding:24px 0;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#7886a0;flex-wrap:wrap;gap:16px}
+.pays{display:flex;gap:6px;flex-wrap:wrap}
+.pays span{font:700 10px var(--head);letter-spacing:.04em;background:#0e1f3d;border:1px solid #1c3157;color:#cdd5e3;border-radius:5px;padding:7px 9px}
+
+/* ========== PRODUCT PAGE ========== */
+.crumbs{font-size:13px;color:var(--muted);padding:22px 0 0}
+.crumbs a:hover{color:var(--blue)}
+.pdp{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;padding:22px 0 70px;align-items:start}
+.gal{position:sticky;top:96px;display:grid;grid-template-columns:84px 1fr;gap:16px}
+.gal .thumbs{display:flex;flex-direction:column;gap:10px}
+.gal .thumbs button{background:var(--soft);border-radius:12px;aspect-ratio:1;overflow:hidden;border:2px solid transparent;padding:6px}
+.gal .thumbs button.on{border-color:var(--navy)}
+.gal .main{background:var(--soft);border-radius:20px;aspect-ratio:1;overflow:hidden;position:relative;cursor:zoom-in}
+.gal .main img{transition:transform .4s;padding:6%}
+.gal .main.zoom{cursor:zoom-out}
+.gal .main.zoom img{transform:scale(1.8)}
+.view{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.v1 img{transform:scale(1.7) translate(12%,10%)}
+.v2 img{transform:scale(1.7) translate(-12%,-8%)}
+.v3{background:linear-gradient(140deg,#dfe9fb,#f7f9fd)}
+.info .br{font:600 12px var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.info h1{font-size:clamp(30px,3vw,42px);font-weight:700;margin:8px 0 8px;line-height:1.08}
+.info .sub{color:var(--muted);line-height:1.55;font-size:15.5px}
+.info .stock{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--ok);font-weight:600;margin-top:14px}
+.info .stock i{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px #14a44d22}
+.info .prc{font-size:30px;margin-top:20px}
+.info .prc s{font-size:18px}
+.info .save{display:inline-block;background:#fdecec;color:var(--sale);font:700 12px var(--head);padding:5px 9px;border-radius:6px;margin-left:4px}
+.info .inst{font-size:13.5px;color:var(--muted);margin:6px 0 4px}
+.info .inst b{color:var(--text)}
+.opt{margin-top:26px}
+.opt .lbl{font:600 14px var(--head);margin-bottom:10px}
+.opt .lbl span{font-weight:500;color:var(--muted);font-family:var(--body)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{border:1.5px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14px;font-weight:500;display:flex;align-items:center;gap:9px;transition:.15s;min-width:96px;justify-content:center}
+.chip:hover{border-color:#9aa3b2}
+.chip.on{border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy)}
+.chip .dot{width:18px;height:18px;border-radius:50%;box-shadow:inset 0 0 0 1px #0002}
+.chip small{color:var(--muted);font-size:12px}
+.qrow{display:flex;gap:12px;margin-top:26px;align-items:stretch}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px}
+.qty button{width:40px;height:52px;font-size:18px}
+.qty span{min-width:26px;text-align:center;font-weight:600}
+.qrow .btn{flex:1}
+.buynow{width:100%;margin-top:12px}
+.trustrow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:22px;background:var(--soft);border-radius:14px;padding:16px}
+.trustrow div{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:12.5px;text-align:center;font-weight:500}
+.trustrow svg{width:22px;height:22px;color:var(--blue)}
+.acc{border-top:1px solid var(--line);margin-top:26px}
+.acc details{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:19px 0;font:600 16px var(--head)}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"+";font-size:22px;font-weight:400;transition:transform .2s}
+.acc details[open] summary::after{transform:rotate(45deg)}
+.acc .ab{padding:0 0 20px;color:#454b57;font-size:14.5px;line-height:1.7}
+.acc ul{padding-left:18px}
+.paylogos{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.paylogos span{font:700 10.5px var(--head);border:1px solid var(--line);border-radius:5px;padding:6px 9px;color:#333}
+.hl{background:var(--soft);padding:70px 0}
+.hlg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.hlg div{background:#fff;border-radius:16px;padding:30px}
+.hlg svg{width:30px;height:30px;color:var(--blue)}
+.hlg h4{font-size:19px;margin:14px 0 6px}
+.hlg p{color:var(--muted);font-size:14.5px;line-height:1.6}
+.spec{width:100%;border-collapse:collapse;margin-top:26px;font-size:14.5px}
+.spec td{padding:15px 4px;border-bottom:1px solid var(--line)}
+.spec td:first-child{color:var(--muted);width:34%}
+.rev{display:flex;align-items:center;justify-content:space-between;gap:20px;background:var(--soft);border-radius:16px;padding:30px;margin-top:26px;flex-wrap:wrap}
+.rev p{color:var(--muted);margin-top:6px}
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fff;box-shadow:0 -10px 30px rgba(11,35,70,.1);transform:translateY(110%);transition:transform .3s}
+.stickybar.on{transform:none}
+body:not(.pdp-on) .stickybar{display:none}
+.stickybar .wrap{display:flex;align-items:center;gap:16px;height:78px}
+.stickybar .th{width:54px;height:54px;background:var(--soft);border-radius:10px;padding:4px;flex:none}
+.stickybar b{font:600 15px var(--head);display:block}
+.stickybar small{color:var(--muted)}
+.stickybar .sp{flex:1;min-width:0}
+.stickybar .pp{font:700 18px var(--head)}
+.stickybar .btn{padding:15px 26px}
+
+/* ========== CHECKOUT ========== */
+.cohead{border-bottom:1px solid var(--line);background:#fff}
+.cohead .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.cohead .sec{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.cohead .sec svg,.demo svg{width:16px;height:16px;flex:none}
+.cohead .sec{background:#f1f7f3;color:#1d7a45;border-radius:999px;padding:8px 14px;font-weight:600}
+.secure{display:flex;justify-content:center;gap:22px;margin-top:16px;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
+.secure span{display:flex;align-items:center;gap:6px}.secure svg{width:15px;height:15px;color:var(--ok)}
+.pnote{text-align:center;font-size:11.5px;color:#9aa0aa;margin-top:10px}
+.ty .ck svg{width:30px;height:30px}
+.co{display:grid;grid-template-columns:1.15fr 1fr;min-height:calc(100vh - 78px)}
+.co .left{padding:40px 56px 70px max(32px,calc((100vw - 1360px)/2 + 32px));border-right:1px solid var(--line)}
+.co .right{background:var(--soft);padding:40px max(32px,calc((100vw - 1360px)/2 + 32px)) 70px 48px}
+.co .right .in{position:sticky;top:30px;max-width:460px}
+.demo{background:var(--sky);color:var(--blue2);border-radius:10px;padding:11px 14px;font-size:13px;margin-bottom:26px;display:flex;gap:8px;align-items:center}
+.express{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.express button{height:48px;border-radius:8px;font:700 15px var(--head)}
+.ex1{background:#000;color:#fff}.ex2{background:#ffc439;color:#003087}.ex3{background:#fff;border:1px solid #ccc!important;color:#333}
+.or{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13px;margin:22px 0}
+.or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}
+.co h3{font-size:21px;font-weight:700;margin:28px 0 14px;display:flex;justify-content:space-between;align-items:baseline}
+.co h3 a{font:500 13px var(--body);color:var(--blue);text-decoration:underline}
+.fld{position:relative;margin-bottom:12px}
+.fld input,.fld select{width:100%;border:1px solid #d4d7dd;border-radius:9px;padding:22px 14px 8px;font-size:15px;background:#fff;outline:0;appearance:none;transition:border-color .15s,box-shadow .15s}
+.fld select{padding-top:22px}
+.fld label{position:absolute;left:15px;top:15px;font-size:15px;color:#7a7f89;pointer-events:none;transition:.15s}
+.fld input:focus,.fld select:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1673ff22}
+.fld input:focus+label,.fld input:not(:placeholder-shown)+label,.fld select+label{top:7px;font-size:11.5px}
+.fld.err input,.fld.err select{border-color:var(--sale)}
+.fld .em{font-size:12px;color:var(--sale);margin-top:4px;display:none}
+.fld.err .em{display:block}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.chk{display:flex;gap:10px;align-items:center;font-size:14px;margin:6px 0 4px;cursor:pointer}
+.chk input{width:18px;height:18px;accent-color:var(--blue)}
+.radios{border:1px solid #d4d7dd;border-radius:10px;overflow:hidden}
+.radio{display:flex;align-items:center;gap:12px;padding:16px;cursor:pointer;border-bottom:1px solid #d4d7dd;font-size:14.5px;background:#fff}
+.radio:last-child{border-bottom:0}
+.radio input{width:18px;height:18px;accent-color:var(--blue);flex:none}
+.radio .t{flex:1}
+.radio .t small{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+.radio.on{background:#f3f7ff;box-shadow:inset 0 0 0 1px var(--blue)}
+.radio .tags{display:flex;gap:4px}
+.radio .tags span{font:700 9.5px var(--head);border:1px solid var(--line);border-radius:4px;padding:4px 6px;background:#fff}
+.paynote{background:#fafbfc;border-top:1px solid #d4d7dd;padding:18px;font-size:13.5px;color:#4a505c;line-height:1.6;display:none}
+.paynote.on{display:block}
+.payall{width:100%;margin-top:26px;padding:21px;font-size:15px;border-radius:12px}
+.copol{display:flex;gap:16px;flex-wrap:wrap;margin-top:30px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px}
+.copol a{color:var(--blue);text-decoration:underline}
+.sline{display:grid;grid-template-columns:66px 1fr auto;gap:14px;align-items:center;margin-bottom:16px}
+.sline .th{width:66px;height:66px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:5px;position:relative}
+.sline .th i{position:absolute;top:-8px;right:-8px;background:#5d6270;color:#fff;font:600 11px/22px var(--body);font-style:normal;min-width:22px;height:22px;border-radius:11px;text-align:center;padding:0 6px}
+.sline b{font-size:14px;font-weight:600;display:block}
+.sline small{color:var(--muted);font-size:12.5px}
+.sline .p{font-weight:600;font-size:14px}
+.disc{display:flex;gap:10px;margin:22px 0}
+.disc .fld{flex:1;margin:0}
+.disc button{background:#e3e6eb;border-radius:9px;padding:0 20px;font-weight:600;font-size:14px}
+.disc button:hover{background:#d5d9e0}
+.tot div{display:flex;justify-content:space-between;font-size:14px;margin-bottom:10px}
+.tot div span:first-child{color:#4a505c}
+.tot .big{font:700 20px var(--head);margin-top:16px;align-items:baseline}
+.tot .big small{font:500 12px var(--body);color:var(--muted);margin-right:6px}
+.dmsg{font-size:12.5px;margin:-12px 0 16px}
+.mobsum{display:none}
+
+/* thank you */
+.ty{max-width:760px;margin:0 auto;padding:60px 32px 90px}
+.ty .ck{width:64px;height:64px;border-radius:50%;background:#e6f6ec;color:var(--ok);display:grid;place-items:center;margin-bottom:18px}
+.ty h1{font-size:34px;font-weight:700}
+.ty .oid{color:var(--muted);margin:6px 0 26px}
+.tybox{border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:16px}
+.tybox h4{font-size:17px;margin-bottom:10px}
+.tybox p{color:#454b57;font-size:14.5px;line-height:1.7}
+.steps{display:flex;gap:6px;margin-top:14px}
+.steps div{flex:1;height:5px;border-radius:3px;background:var(--line)}
+.steps div.on{background:var(--ok)}
+
+/* drawer, modal, toast */
+.scrim{position:fixed;inset:0;background:rgba(6,20,43,.45);z-index:90;opacity:0;visibility:hidden;transition:.3s}
+.scrim.on{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:#fff;z-index:100;transform:translateX(100%);transition:transform .38s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column}
+.drawer.on{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;border-bottom:1px solid var(--line)}
+.dh h3{font-size:20px;font-weight:700}
+.x{width:38px;height:38px;border-radius:50%;display:grid;place-items:center}
+.x:hover{background:var(--soft)}
+.ship{padding:16px 24px;background:var(--soft);font-size:13px}
+.ship .bar{height:6px;border-radius:3px;background:#dcdfe5;margin-top:9px;overflow:hidden}
+.ship .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue2),var(--blue));transition:width .4s}
+.items{flex:1;overflow:auto;padding:4px 24px}
+.ci{display:grid;grid-template-columns:84px 1fr auto;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
+.ci .th{background:var(--soft);border-radius:10px;aspect-ratio:1;padding:6px}
+.ci b{font:600 15px var(--head);display:block}
+.ci small{color:var(--muted);font-size:12.5px}
+.ci .qty{margin-top:8px}
+.ci .qty button{width:30px;height:30px;font-size:15px}
+.ci .rt{text-align:right;font:700 15px var(--head)}
+.ci .rm{display:block;font:500 12px var(--body);color:var(--muted);text-decoration:underline;margin-top:10px;margin-left:auto}
+.empty{text-align:center;padding:60px 10px}
+.empty svg{width:60px;height:60px;color:#c4c8d0;margin:0 auto 16px}
+.empty h4{font-size:19px;margin-bottom:8px}
+.empty p{color:var(--muted);font-size:14px;margin-bottom:22px}
+.df{border-top:1px solid var(--line);padding:20px 24px 24px}
+.df .row{display:flex;justify-content:space-between;font:700 17px var(--head);margin-bottom:6px}
+.df small{color:var(--muted);font-size:12.5px;display:block;margin-bottom:16px}
+.df .btn{width:100%}
+.trust{display:flex;justify-content:space-between;margin-top:14px;font-size:11.5px;color:var(--muted)}
+.trust span{display:flex;align-items:center;gap:5px}
+.trust svg{width:15px;height:15px;color:var(--blue)}
+.search{position:fixed;top:0;left:0;right:0;background:#fff;z-index:105;transform:translateY(-100%);transition:transform .35s;box-shadow:0 30px 60px rgba(0,0,0,.18);max-height:90vh;overflow:auto}
+.search.on{transform:none}
+.sbar{display:flex;align-items:center;gap:14px;height:84px;border-bottom:1px solid var(--line)}
+.sbar input{flex:1;border:0;outline:0;font:600 24px var(--head);min-width:0}
+.sres{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;padding:22px 0 30px}
+.sres a{display:flex;gap:12px;align-items:center;padding:8px;border-radius:12px}
+.sres a:hover{background:var(--soft)}
+.sres .th{width:64px;height:64px;background:var(--soft);border-radius:10px;padding:5px;flex:none}
+.sres b{font:600 14px var(--head);display:block}
+.sres small{color:var(--muted)}
+.shint{padding:22px 0 0;color:var(--muted);font-size:14px}
+.modal{position:fixed;inset:0;z-index:110;display:grid;place-items:center;padding:20px;opacity:0;visibility:hidden;transition:.25s;background:rgba(6,20,43,.45)}
+.modal.on{opacity:1;visibility:visible}
+.mbox{background:#fff;border-radius:20px;width:min(620px,100%);padding:34px;position:relative;max-height:90vh;overflow:auto}
+.mbox>.x{position:absolute;top:14px;right:14px}
+.mbox h3{font-size:22px;margin-bottom:18px}
+.rgrp{margin-bottom:16px}
+.rgrp h5{font:700 12px var(--head);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.rgrp div{display:flex;flex-wrap:wrap;gap:8px}
+.rgrp button{border:1.5px solid var(--line);border-radius:999px;padding:9px 16px;font-size:13.5px}
+.rgrp button:hover,.rgrp button.on{border-color:var(--navy);background:var(--navy);color:#fff}
+.lform input{width:100%;border:1px solid #d4d7dd;border-radius:10px;padding:15px;margin-bottom:12px;outline:0}
+.lform input:focus{border-color:var(--blue)}
+.lform .btn{width:100%}
+.toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,30px);background:var(--navy);color:#fff;padding:14px 22px;border-radius:999px;font-size:14px;z-index:200;opacity:0;transition:.3s;display:flex;align-items:center;gap:10px;white-space:nowrap;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.toast svg{width:18px;height:18px;color:#7fb2ff}
+.mnav{position:fixed;inset:0;background:#fff;z-index:120;padding:16px 26px 40px;overflow:auto;opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity .3s,transform .35s cubic-bezier(.2,.8,.2,1),visibility .3s}
+.mnav.on{opacity:1;visibility:visible;transform:none}
+.mnav .mtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.mnav .mtop img{height:40px}
+.mnav .mbig a{display:block;font:600 28px/1.2 var(--head);color:#1d1d1f;padding:9px 0;letter-spacing:-.02em;opacity:0;transform:translateY(-6px);transition:opacity .4s,transform .4s}
+.mnav.on .mbig a{opacity:1;transform:none}
+.mnav .msm{margin-top:28px;border-top:1px solid var(--line);padding-top:18px}
+.mnav .msm h6{font:500 12px var(--body);color:#6e6e73;margin-bottom:8px}
+.mnav .msm a{display:block;font:500 15px var(--body);color:#333;padding:8px 0}
+
+@media (max-width:1100px){
+  nav.main{display:none}.burger{display:grid!important}
+  .hbar{justify-content:space-between}
+  .grid,.bgrid{grid-template-columns:repeat(3,1fr)}
+  .cats{grid-template-columns:repeat(3,1fr)}
+  .fgrid{grid-template-columns:repeat(3,1fr)}.fgrid>div:first-child{grid-column:1/-1}
+  .pdp{grid-template-columns:1fr 1fr;gap:34px}
+  .gal{grid-template-columns:1fr}.gal .thumbs{flex-direction:row;order:2}.gal .thumbs button{width:70px}
+  .util .rg{display:none}
+}
+@media (max-width:860px){
+  .wrap{padding:0 18px}
+  .util .wrap span:nth-child(n+2){display:none}
+  .slides{height:auto;min-height:720px}
+  .slide{grid-template-columns:1fr;grid-template-rows:auto 1fr;padding-top:44px;text-align:center}
+  .slide .copy{padding:0 22px}.slide p.tl{margin:0 auto}.slide .acts{justify-content:center}
+  .slide .art img{max-height:340px}
+  .harrow{display:none}
+  .grid,.bgrid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .feat{grid-template-columns:1fr}.feat.b .fa{order:0}.feat .fa img{max-height:320px}
+  .why{grid-template-columns:1fr}
+  .benefits .wrap{grid-template-columns:1fr 1fr}.benefit+.benefit{border-left:0}
+  .pdp{grid-template-columns:1fr}.gal{position:static}
+  .hlg{grid-template-columns:1fr}
+  .co{grid-template-columns:1fr}.co .right{display:none}.co .left{padding:24px 18px 60px;border:0}
+  .mobsum{display:block;background:var(--soft);border-radius:12px;margin-bottom:20px}
+  .mobsum summary{padding:16px;display:flex;justify-content:space-between;cursor:pointer;font-weight:600;color:var(--blue2);list-style:none}
+  .mobsum .ms{padding:0 16px 16px}
+  .express{grid-template-columns:1fr}
+  .card h3{font-size:16px}.card .ds{display:none}
+}
+@media (max-width:860px){
+  .fld input,.fld select,.lform input,.news input,.sbar input,.disc input{font-size:16px}
+  .toast{bottom:auto;top:16px;max-width:calc(100% - 32px);white-space:normal;text-align:center}
+  .stickybar .wrap{height:70px;gap:10px}
+  .stickybar b{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  body.pdp-on{padding-bottom:70px}
+  .crumbs{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .trustrow{padding:12px 8px}.trustrow div{font-size:11.5px}
+  .chip{min-width:0;padding:11px 14px}
+  .sh{margin-bottom:22px}
+  .fbot{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:520px){
+  .cats{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:1fr 1fr}
+  .benefits .wrap{grid-template-columns:1fr}.logo img{height:40px}
+  section.blk{padding:60px 0}.prc{font-size:16px}
+  .row3{grid-template-columns:1fr}.stickybar .th{display:none}.stickybar .btn{padding:14px 16px}
+}
+</style>
+</head>
+<body>
+
+<a href="#app" class="skip">Skip to content</a>
+<div id="shell">
+<div class="util"><div class="wrap">
+  <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>Free Shipping over $100</span>
+  <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>30-Day Return</span>
+  <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/></svg>1-Year Warranty</span>
+  <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>Pay with Ease</span>
+</div></div>
+
+<header class="site"><div class="wrap hbar">
+  <button class="burger hicons" id="burgerBtn" aria-label="Menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a href="#home" class="logo"><img src="logo.png" alt="TechMartPro"></a>
+  <nav class="main" id="mainNav"></nav>
+  <div class="hicons">
+    <button id="searchBtn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    <button id="loginBtn" aria-label="Log in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></button>
+    <button id="wishBtn" class="wbtn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg><span class="ccount" id="wcount">0</span></button>
+    <button id="cartBtn" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="ccount" id="ccount">0</span></button>
+  </div>
+</div></header>
+<div class="navscrim" id="navscrim"></div>
+</div>
+
+<main id="app" tabindex="-1"></main>
+
+<footer id="foot">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="#home"><img src="logo-white.png" alt="TechMartPro"></a>
+        <p class="about">Your one-stop shop for the latest phones, earbuds, tablets, wearables and gadgets — genuine products, fast delivery, real support.</p>
+      </div>
+      <div><h4>Products</h4><ul id="fprod"></ul></div>
+      <div><h4>Policies</h4><ul><li><a href="#">Shipping Policy</a></li><li><a href="#">Return &amp; Refund</a></li><li><a href="#">Warranty</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+      <div><h4>Community</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li><li><a href="#">YouTube</a></li><li><a href="#">WhatsApp</a></li></ul></div>
+      <div><h4>Help &amp; Support</h4><ul><li><a href="#">Return Center</a></li><li><a href="#">Order Tracking</a></li><li><a href="#">Contact Us</a></li><li><a href="#">About Us</a></li></ul></div>
+    </div>
+    <div class="fbot"><span>© <span id="yr"></span> TechMartPro. All Rights Reserved. Product names and images are trademarks of their respective owners.</span>
+      <div class="pays"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>DISCOVER</span><span>PAYPAL</span><span>APPLE PAY</span><span>G PAY</span></div></div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer"><div class="dh"><h3>Your Cart</h3><button class="x" data-close aria-label="Close">✕</button></div><div class="ship" id="ship"></div><div class="items" id="items"></div><div class="df" id="dfoot"></div></aside>
+<div class="search" id="search"><div class="wrap"><div class="sbar"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="sinput" placeholder="Search phones, earbuds, tablets…" autocomplete="off"><button class="x" data-close>✕</button></div><div id="sres"></div></div></div>
+<div class="modal" id="lmodal"><div class="mbox" style="width:min(440px,100%)"><button class="x" data-close>✕</button><h3>Log in</h3><p style="color:var(--muted);margin:-8px 0 18px;font-size:14px">Track orders and check out faster.</p><form class="lform" id="loginForm"><input type="email" placeholder="Email" required><input type="password" placeholder="Password" required><button class="btn dk" type="submit">Log in</button></form></div></div>
+<nav class="mnav" id="mnav"></nav>
+<div class="stickybar" id="sticky"></div>
+<div class="ctray" id="ctray" aria-live="polite"></div>
+<div class="cookie" id="cookie" role="dialog" aria-label="Cookie preferences"><b>We value your privacy</b>We use cookies to keep your cart, remember your preferences and improve your shopping experience.<div class="row"><button class="btn ol" data-cookie="0">Decline</button><button class="btn dk" data-cookie="1">Accept</button></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 5 5L20 7"/></svg><span></span></div>
+
+<script>
+/* ================= CATALOG — edit names, prices, images here ================= */
+const P=[
+ {id:'iphone18pro',n:'iPhone 18 Pro',b:'Apple',cat:'phones',d:'A20 Pro chip, 6.3-inch ProMotion display and triple 48MP Pro Fusion cameras.',p:1199,w:null,bd:['new','hot'],colors:[['Burgundy','#5a1f2b'],['Glacier','#bcd3e3'],['Silver','#d9dbde'],['Black','#26272b']],st:[['256GB',0],['512GB',200],['1TB',400],['2TB',800]]},
+ {id:'iphone18promax',n:'iPhone 18 Pro Max',b:'Apple',cat:'phones',d:'A20 Pro chip, 6.9-inch ProMotion display and the longest iPhone battery life.',p:1299,w:null,bd:['new'],colors:[['Silver','#d9dbde'],['Burgundy','#5a1f2b'],['Glacier','#bcd3e3'],['Black','#26272b']],st:[['256GB',0],['512GB',200],['1TB',400],['2TB',800]]},
+ {id:'iphone17pro',n:'iPhone 17 Pro',b:'Apple',cat:'phones',d:'A19 Pro chip, pro camera system and all-day battery life.',p:1099,w:null,bd:['hot'],colors:[['Cosmic Orange','#d9772e'],['Deep Blue','#2f4160'],['Silver','#d6d8dc']],st:[['256GB',0],['512GB',200],['1TB',400]]},
+ {id:'s26ultra',n:'Galaxy S26 Ultra',b:'Samsung',cat:'phones',d:'200MP camera, built-in S Pen and Galaxy AI.',p:1199,w:1299,bd:['sale'],colors:[['Cobalt Violet','#4a3f78'],['Titanium Black','#2b2d33'],['Silver','#c9ccd2']],st:[['256GB',0],['512GB',120],['1TB',360]]},
+ {id:'pixel10pro',n:'Pixel 10 Pro',b:'Google',cat:'phones',d:'Google Tensor G5, pro-level cameras and 7 years of updates.',p:899,w:999,bd:['sale'],colors:[['Moonstone','#8d9aa6'],['Porcelain','#e8e2d6'],['Obsidian','#34373c']],st:[['128GB',0],['256GB',100],['512GB',220]]},
+ {id:'oneplus13',n:'OnePlus 13',b:'OnePlus',cat:'phones',d:'Snapdragon flagship speed, fast charging and a huge battery.',p:749,w:899,bd:['sale'],colors:[['Black Eclipse','#1d1f24'],['Midnight Ocean','#1f2c40']],st:[['256GB',0],['512GB',100]]},
+ {id:'airpodspro3',n:'AirPods Pro 3',b:'Apple',cat:'audio',d:'Active Noise Cancellation, heart-rate sensing and Spatial Audio.',p:249,w:null,bd:['hot'],colors:[['White','#f4f4f5']]},
+ {id:'xm6',n:'Sony WH-1000XM6',b:'Sony',cat:'audio',d:'Industry-leading noise cancelling with long battery life.',p:399,w:449,bd:['sale'],colors:[['Black','#25262a'],['Platinum Silver','#d6d0c4'],['Midnight Blue','#34465e']]},
+ {id:'buds3pro',n:'Galaxy Buds3 Pro',b:'Samsung',cat:'audio',d:'Blade design, adaptive ANC and Hi-Fi sound.',p:199,w:249,bd:['sale'],colors:[['Silver','#c3c7cd'],['White','#f6f6f7']]},
+ {id:'flip7',n:'JBL Flip 7',b:'JBL',cat:'audio',d:'Portable, waterproof and drop-proof with bold sound.',p:149,w:null,bd:[],colors:[['Blue','#2a4f8f'],['Black','#202228'],['Red','#d9402c']]},
+ {id:'aws11',n:'Apple Watch Series 11',b:'Apple',cat:'wearables',d:'Advanced health insights and an always-on Retina display.',p:399,w:null,bd:['new'],colors:[['Rose Gold','#e3c6b1'],['Jet Black','#2b2b2e'],['Silver','#cfd2d6']],st:[['42mm',0],['46mm',30]]},
+ {id:'gw8',n:'Galaxy Watch8',b:'Samsung',cat:'wearables',d:'Advanced sleep and health tracking with Gemini on your wrist.',p:299,w:349,bd:['sale'],colors:[['Silver','#d3d6da'],['Graphite','#34363b']],st:[['40mm',0],['44mm',30]]},
+ {id:'ipadair',n:'iPad Air (M3)',b:'Apple',cat:'tablets',d:'M3 chip, Liquid Retina display and Apple Pencil Pro support.',p:599,w:null,bd:[],colors:[['Blue','#a9b6ca'],['Purple','#b9abca'],['Starlight','#e6e1d8'],['Space Gray','#4a4c51']],st:[['128GB',0],['256GB',100],['512GB',300]]},
+ {id:'tabs11',n:'Galaxy Tab S11',b:'Samsung',cat:'tablets',d:'Dynamic AMOLED 2X display, S Pen included and Galaxy AI.',p:749,w:799,bd:['new'],colors:[['Gray','#5a5d63'],['Silver','#d4d7db']],st:[['128GB',0],['256GB',80]]},
+ {id:'osmo3',n:'DJI Osmo Pocket 3',b:'DJI',cat:'gadgets',d:'1-inch sensor, 4K video and 3-axis stabilization in your pocket.',p:519,w:null,bd:['hot'],colors:[['Black','#2a2b2f']]},
+ {id:'anker20k',n:'Anker Prime Power Bank 20K',b:'Anker',cat:'accessories',d:'20,000mAh with fast multi-device charging and a smart display.',p:109,w:139,bd:['sale'],colors:[['Black','#2a2b2f']]},
+ {id:'gan65',n:'UGREEN Nexode 65W Charger',b:'UGREEN',cat:'accessories',d:'Compact GaN charger — power phone, tablet and laptop at once.',p:39,w:59,bd:['sale'],colors:[['Gray','#5d6066']]},
+];
+P.forEach(p=>p.img='img/'+p.id+'.jpg');
+const byId=Object.fromEntries(P.map(p=>[p.id,p]));
+const CATS=[{k:'phones',n:'Phones',ex:'iphone18pro'},{k:'audio',n:'Earbuds & Audio',ex:'airpodspro3'},{k:'wearables',n:'Wearables',ex:'aws11'},{k:'tablets',n:'Tablets',ex:'ipadair'},{k:'accessories',n:'Accessories',ex:'anker20k'},{k:'gadgets',n:'Gadgets',ex:'osmo3'}];
+const BUNDLES=[{id:'b-creator',n:'Creator Bundle',items:['osmo3','anker20k','gan65'],off:.12},{id:'b-audio',n:'Audio Lover Bundle',items:['xm6','airpodspro3','flip7'],off:.10},{id:'b-apple',n:'All-Apple Bundle',items:['iphone18pro','aws11','airpodspro3'],off:.08},{id:'b-galaxy',n:'Galaxy Ecosystem',items:['s26ultra','gw8','buds3pro'],off:.15}];
+BUNDLES.forEach(b=>{b.w=b.items.reduce((s,i)=>s+(byId[i].w||byId[i].p),0);b.p=Math.round(b.items.reduce((s,i)=>s+byId[i].p,0)*(1-b.off))});
+const BOX={phones:['Smartphone','USB-C charging cable','SIM ejector tool','Quick start guide'],audio:['Headphones / earbuds','Charging case or carry case (where applicable)','USB-C cable','Quick start guide'],wearables:['Smartwatch','Band','Charging cable','Quick start guide'],tablets:['Tablet','USB-C cable','Quick start guide'],gadgets:['Device','Charging cable','Accessories as supplied by manufacturer'],accessories:['Device','Cable (where applicable)','User manual']};
+
+/* ================= HELPERS ================= */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const money=v=>'$'+v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+const img=(p,cls='pimg')=>`<img class="${cls}" src="${p.img}" alt="${p.n}" loading="lazy">`;
+const badge=k=>({hot:'<span class="badge hot">🔥 Hot</span>',sale:'<span class="badge sale">Sale</span>',new:'<span class="badge new">New</span>'}[k]||'');
+const priceHtml=(p,w=p.w)=>`<div class="prc ${w?'sale':''}"><b>${money(p.p)}</b>${w?`<s>${money(w)}</s><span class="off">SAVE ${money(w-p.p)}</span>`:''}</div>`;
+const ic={ship:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>',ret:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>',war:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>',card:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg>',lock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>',spark:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>',chev:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m6 9 6 6 6-6"/></svg>'};
+function toast(m){const t=$('#toast');t.querySelector('span').textContent=m;t.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('on'),2200)}
+const store={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* ================= NAV ================= */
+const NAV=[{n:'Phones',k:'phones'},{n:'Earbuds & Audio',k:'audio'},{n:'Wearables',k:'wearables'},{n:'Tablets',k:'tablets'},{n:'Accessories',k:'acc'},{n:'Trade-in',href:'#home-trade'},{n:'Bundles',href:'#home-bundles'}];
+const inCat=k=>k==='all'?P:k==='acc'?P.filter(p=>['accessories','gadgets'].includes(p.cat)):k==='deals'?P.filter(p=>p.w):P.filter(p=>p.cat===k);
+const HELP='<div><h6>Help</h6><div class="sm"><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Warranty</a><a href="#">Order Tracking</a><a href="#">Contact Us</a></div></div>';
+$('#mainNav').innerHTML=NAV.map(x=>{const l=x.k?inCat(x.k):[];return `<div class="ni"><a href="${x.href||'#home-shop'}" data-filter="${x.k||''}">${x.n}</a>${l.length?`<div class="mega"><div class="mw"><div><h6>Shop ${x.n}</h6><div class="big">${l.slice(0,6).map(p=>`<a href="#p-${p.id}">${p.n}</a>`).join('')}</div></div><div><h6>Quick Links</h6><div class="sm"><a href="${x.href||'#home-shop'}" data-filter="${x.k}">Shop all ${x.n}</a><a href="#home-shop" data-filter="deals">Deals</a><a href="#home-bundles">Bundles</a><a href="#home-shop" data-filter="all">New &amp; Best Sellers</a></div></div>${HELP}</div></div>`:''}</div>`}).join('');
+$('#mnav').innerHTML=`<div class="mtop"><img src="logo.png" alt="TechMartPro"><button class="x" data-close aria-label="Close menu">✕</button></div><div class="mbig">${NAV.map((x,i)=>`<a href="${x.href||'#home-shop'}" data-filter="${x.k||''}" style="transition-delay:${.04*i+.05}s">${x.n}</a>`).join('')}<a href="#home-shop" data-filter="deals" style="transition-delay:${.04*NAV.length+.05}s">Deals</a><a href="#home-trade" style="transition-delay:${.04*NAV.length+.09}s">Trade-in</a><a href="#wishlist" style="transition-delay:${.04*NAV.length+.13}s">Wishlist</a><a href="#compare" style="transition-delay:${.04*NAV.length+.17}s">Compare</a></div><div class="msm"><h6>Help</h6><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Order Tracking</a><a href="#">Contact Us</a></div>`;
+(()=>{const canHover=matchMedia('(hover:hover) and (pointer:fine)').matches;let t;const sc=$('#navscrim');
+ const close=()=>{$$('nav.main .ni.open').forEach(n=>n.classList.remove('open'));sc.classList.remove('on')};window.closeMega=close;
+ $$('nav.main .ni').forEach(n=>{if(!n.querySelector('.mega'))return;
+  if(canHover){n.addEventListener('mouseenter',()=>{clearTimeout(t);t=setTimeout(()=>{$$('nav.main .ni.open').forEach(o=>o!==n&&o.classList.remove('open'));n.classList.add('open');sc.classList.add('on')},120)});
+   n.addEventListener('mouseleave',()=>{clearTimeout(t);t=setTimeout(close,180)})}});
+ sc.addEventListener('mouseenter',()=>{clearTimeout(t);close()});sc.addEventListener('click',close);
+ document.addEventListener('click',e=>{if(e.target.closest('.mega a,nav.main .ni>a'))close()});
+ window.addEventListener('scroll',()=>{if(sc.classList.contains('on')&&!canHover)close()},{passive:true})})();
+$('#fprod').innerHTML=P.slice(0,7).map(p=>`<li><a href="#p-${p.id}">${p.n}</a></li>`).join('');
+$('#yr').textContent=new Date().getFullYear();
+
+/* ================= HOME ================= */
+const HERO=[
+ {pid:'iphone18pro',bd:'new',w:'iPhone',fs:'clamp(80px,14vw,230px)',c:'linear-gradient(160deg,#d7a1aa 0%,#b97582 100%)',t:'The latest iPhone, in stunning Burgundy. A20 Pro chip and a variable-aperture 48MP camera.'},
+ {pid:'s26ultra',bd:'sale',w:'Galaxy',c:'linear-gradient(160deg,#b9aeea 0%,#9284d6 100%)',t:'200MP camera, built-in S Pen and Galaxy AI. Save $100 for a limited time.'},
+ {pid:'xm6',bd:'sale',w:'Sony',c:'linear-gradient(160deg,#aebbd0 0%,#8797b0 100%)',t:'Industry-leading noise cancelling headphones. Now $50 off.'},
+];
+let filt='all';
+let wish=store.get('tmp-wish',[]),cmp=store.get('tmp-cmp',[]),rv=store.get('tmp-rv',[]);
+let F={sort:'featured',brands:[],sale:false,price:'any'};
+const HEART='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>';
+function card(p){const w=wish.includes(p.id),c=cmp.includes(p.id);return `<div class="card"><a class="im" href="#p-${p.id}"><div class="bdg">${p.bd.map(badge).join('')}</div>${img(p)}</a><button class="fav ${w?'on':''}" data-fav="${p.id}" aria-pressed="${w}" aria-label="${w?'Remove '+p.n+' from':'Save '+p.n+' to'} wishlist">${HEART}</button><div class="bd"><span class="br">${p.b}</span><h3><a href="#p-${p.id}">${p.n}</a></h3><p class="ds">${p.d}</p>${priceHtml(p)}<label class="cmpchk"><input type="checkbox" data-cmp="${p.id}" ${c?'checked':''}> Compare</label><button class="btn dk" data-add="${p.id}">Add to Cart</button></div></div>`}
+function homeHTML(){return `
+<section class="vhero"><div class="vview" id="vview"><div class="vtrack" id="vtrack">${HERO.map((h,i)=>{const p=byId[h.pid];return `<div class="vs ${i?'':'on'}" style="--c:${h.c}"><div class="bdg">${badge(h.bd)}</div><span class="cnt">0${i+1} / 0${HERO.length}</span><div class="word" style="--len:${h.w.replace(/ /g,'').length+h.w.split(' ').length*.35}">${h.w}</div><div class="ph"><img src="cut/${p.id}.png" alt="${p.n}" ${h.mask?'style="-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%);mask-image:linear-gradient(90deg,transparent 0,#000 22%)"':''}></div><div class="meta"><h2>${p.n}</h2><div class="pp">${p.w?'Now ':'From '}${money(p.p)}${p.w?`<s>${money(p.w)}</s>`:''}</div><p>${h.t}</p><div class="acts"><a class="btn wh" href="#p-${p.id}">Shop Now</a><button class="btn glass" data-add="${p.id}">Add to Cart</button></div></div></div>`}).join('')}</div><button class="vnav l" data-sl="-1" aria-label="Previous">‹</button><button class="vnav r" data-sl="1" aria-label="Next">›</button></div><div class="vdots">${HERO.map((_,i)=>`<button class="${i?'':'on'}" data-dot="${i}" aria-label="Slide ${i+1}"><i></i></button>`).join('')}</div></section>
+
+<section class="blk" id="home-shop"><div class="wrap"><div class="sh"><div><h2>Best Sellers</h2><p>The phones and gadgets everyone's adding to cart right now.</p></div>
+<div class="tabs" id="tabs">${[['all','All'],['phones','Phones'],['audio','Earbuds & Audio'],['wearables','Wearables'],['tablets','Tablets'],['acc','Accessories'],['deals','Deals']].map(([k,n])=>`<button data-tab="${k}">${n}</button>`).join('')}</div></div><div class="tools" id="tools"></div><div class="grid" id="grid"></div></div></section>
+<div id="rvHome"></div>
+
+<section class="feat a"><div class="fa">${img(byId.pixel10pro,'')}</div><div class="fc"><div>${badge('hot')}</div><h2>Pixel 10 Pro.<br>AI that just gets it.</h2><p>Google Tensor G5 powers smarter photos, live translation and seven years of OS and security updates. Now $100 off.</p><div class="specs"><div><b>50MP</b><span>Main camera</span></div><div><b>Tensor G5</b><span>Google chip</span></div><div><b>7 yrs</b><span>Of updates</span></div></div><div style="display:flex;gap:12px;flex-wrap:wrap"><button class="btn pri" data-add="pixel10pro">Buy Now — ${money(byId.pixel10pro.p)}</button><a class="btn ol" href="#p-pixel10pro">Learn More</a></div></div></section>
+<section class="feat b"><div class="fa">${img(byId.airpodspro3,'')}</div><div class="fc"><div>${badge('new')}</div><h2>AirPods Pro 3.<br>Hear only what matters.</h2><p>Next-level noise cancellation, heart-rate sensing for workouts and personalised Spatial Audio.</p><div class="specs"><div><b>ANC</b><span>Active Noise Cancellation</span></div><div><b>USB-C</b><span>Charging case</span></div><div><b>Spatial</b><span>Audio</span></div></div><div style="display:flex;gap:12px;flex-wrap:wrap"><button class="btn dk" data-add="airpodspro3">Buy Now — ${money(byId.airpodspro3.p)}</button><a class="btn ol" href="#p-airpodspro3">Learn More</a></div></div></section>
+
+<section class="blk"><div class="wrap"><div class="sh"><div><h2>Shop by Category</h2><p>Phones, earbuds, tablets, gadgets and accessories — all in one place.</p></div></div>
+<div class="cats">${CATS.map(c=>{const n=P.filter(p=>p.cat===c.k).length;return `<div class="cat" data-cat="${c.k}"><div class="ci">${img(byId[c.ex])}</div><b>${c.n}</b><span>${n} product${n>1?'s':''}</span></div>`}).join('')}</div></div></section>
+
+<section class="blk trade" id="home-trade"><div class="wrap"><div class="tgrid"><div><span class="badge new">Trade-in</span><h2 style="font-size:clamp(30px,3.4vw,46px);margin-top:16px;line-height:1.08">Trade in your old phone.<br>Upgrade for less.</h2><p style="color:#454b57;margin-top:14px;max-width:470px;line-height:1.6">Get credit toward your next device when you send us your old phone, tablet or watch — in any condition.</p>
+<div class="tsteps"><div><i>1</i><div><b>Tell us about your device</b><span>Model and condition take 30 seconds.</span></div></div><div><i>2</i><div><b>Get your quote by email</b><span>We'll send your trade-in value within 24 hours.</span></div></div><div><i>3</i><div><b>Ship it free, get credit</b><span>Free prepaid label. Credit applied once we receive it.</span></div></div></div></div>
+<form class="tform" id="tradeForm" novalidate><h3>Get a trade-in quote</h3><p>No obligation. Free shipping both ways.</p>
+<div class="fld"><select id="tType"><option>Phone</option><option>Tablet</option><option>Smartwatch</option><option>Headphones / earbuds</option></select><label>Device type</label></div>
+<div class="fld"><input id="tModel" placeholder=" " required><label>Brand &amp; model (e.g. iPhone 14 Pro)</label><div class="em">Please enter your device model</div></div>
+<div class="fld"><select id="tCond"><option>Like new</option><option>Good — light scratches</option><option>Fair — visible wear</option><option>Cracked or not working</option></select><label>Condition</label></div>
+<div class="fld"><input id="tEmail" type="email" placeholder=" " required><label>Email for your quote</label><div class="em">Enter a valid email address</div></div>
+<button class="btn pri" type="submit">Get My Quote</button></form></div></div></section>
+
+<section class="blk bundles" id="home-bundles"><div class="wrap"><div class="sh"><div><h2>Bundle &amp; Save</h2><p>Curated combos with extra savings built in.</p></div></div>
+<div class="bgrid">${BUNDLES.map(b=>`<div class="bcard"><div class="im">${b.items.map(i=>img(byId[i])).join('')}</div><div class="bd"><span class="badge hot" style="align-self:flex-start">Save ${Math.round(b.off*100)}%</span><h3>${b.n}</h3><ul>${b.items.map(i=>`<li>${byId[i].n}</li>`).join('')}</ul>${priceHtml(b)}<div class="save">You save ${money(b.w-b.p)}</div><br><button class="btn pri" data-addb="${b.id}">Buy Bundle</button></div></div>`).join('')}</div></div></section>
+
+<section class="blk"><div class="wrap"><div class="sh"><div><h2>Why TechMartPro</h2><p>Shopping for tech should feel as good as unboxing it.</p></div></div>
+<div class="why"><div class="w"><div class="n">01</div><h3>100% Genuine</h3><p>Every device is brand-new and sealed, sourced through authorized channels with the official warranty.</p></div><div class="w"><div class="n">02</div><h3>Fast Dispatch</h3><p>Orders placed before 3 PM ship the same day, with tracking sent straight to your inbox.</p></div><div class="w"><div class="n">03</div><h3>Real Humans</h3><p>Not sure which phone fits you? Our tech team helps you compare, set up and move your data.</p></div></div></div></section>
+${benefitsHTML()}
+<section class="news"><div class="wrap"><div><h2>Keep in touch with<br>TechMartPro</h2><p>Early access to drops, deals and exclusive bundles.</p></div><form data-news><input type="email" required placeholder="Enter your email"><button class="btn dk" type="submit">Subscribe</button></form></div></section>`}
+function benefitsHTML(){return `<div class="benefits"><div class="wrap"><div class="benefit"><div class="ic">${ic.ship}</div><div><b>Free Shipping</b><span>On orders over $100</span></div></div><div class="benefit"><div class="ic">${ic.ret}</div><div><b>30-Day Return</b><span>Hassle-free returns</span></div></div><div class="benefit"><div class="ic">${ic.war}</div><div><b>1-Year Warranty</b><span>On every device</span></div></div><div class="benefit"><div class="ic">${ic.card}</div><div><b>Pay with Ease</b><span>4 interest-free installments</span></div></div></div></div>`}
+function filtered(){let l=inCat(filt).slice();if(F.brands.length)l=l.filter(p=>F.brands.includes(p.b));if(F.sale)l=l.filter(p=>p.w);
+ if(F.price==='u300')l=l.filter(p=>p.p<300);else if(F.price==='300-800')l=l.filter(p=>p.p>=300&&p.p<=800);else if(F.price==='o800')l=l.filter(p=>p.p>800);
+ const by={low:(a,b)=>a.p-b.p,high:(a,b)=>b.p-a.p,newest:(a,b)=>(b.bd.includes('new')-a.bd.includes('new')),savings:(a,b)=>((b.w||b.p)-b.p)-((a.w||a.p)-a.p)}[F.sort];if(by)l.sort(by);return l}
+function renderTools(){const t=$('#tools');if(!t)return;const brands=[...new Set(inCat(filt).map(p=>p.b))];F.brands=F.brands.filter(b=>brands.includes(b));const active=F.brands.length||F.sale||F.price!=='any';
+ t.innerHTML=`<div class="grp"><label class="sr" for="fsort">Sort by</label><select class="sel" id="fsort">${[['featured','Featured'],['low','Price: low to high'],['high','Price: high to low'],['newest','Newest'],['savings','Biggest savings']].map(([v,n])=>`<option value="${v}" ${F.sort===v?'selected':''}>${n}</option>`).join('')}</select>
+ <label class="sr" for="fprice">Price</label><select class="sel" id="fprice">${[['any','Any price'],['u300','Under $300'],['300-800','$300 – $800'],['o800','Over $800']].map(([v,n])=>`<option value="${v}" ${F.price===v?'selected':''}>${n}</option>`).join('')}</select>
+ <button class="fchip ${F.sale?'on':''}" data-fsale aria-pressed="${F.sale}">On sale</button>${brands.length>1?brands.map(b=>`<button class="fchip ${F.brands.includes(b)?'on':''}" data-fbrand="${b}" aria-pressed="${F.brands.includes(b)}">${b}</button>`).join(''):''}${active?'<button class="clearf" data-fclear>Clear filters</button>':''}</div><span class="rcount" id="rcount"></span>`;
+ $('#fsort').onchange=e=>{F.sort=e.target.value;renderGrid()};$('#fprice').onchange=e=>{F.price=e.target.value;renderGrid()}}
+function renderGrid(){const g=$('#grid');if(!g)return;renderTools();const l=filtered();g.innerHTML=l.length?l.map(card).join(''):'<div class="noresults">No products match these filters. <button class="clearf" data-fclear>Clear filters</button></div>';$('#rcount')&&($('#rcount').textContent=`Showing ${l.length} product${l.length===1?'':'s'}`);$$('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.tab===filt))}
+function rvHTML(exclude){const l=rv.filter(id=>id!==exclude&&byId[id]).slice(0,6);if(!l.length)return '';return `<section class="blk" style="padding-top:0"><div class="wrap"><div class="sh"><div><h2 style="font-size:clamp(24px,2.4vw,32px)">Recently viewed</h2></div></div><div class="rvrow">${l.map(id=>{const p=byId[id];return `<a class="rvi" href="#p-${p.id}"><div class="th">${img(p)}</div><b>${p.n}</b><span>${money(p.p)}</span></a>`}).join('')}</div></div></section>`}
+let cur=0,timer;function go(i){const t=$('#vtrack');if(!t)return;cur=(i+HERO.length)%HERO.length;t.style.transform=`translateX(-${cur*100}%)`;$$('.vs').forEach((x,j)=>x.classList.toggle('on',j===cur));$$('.vdots button').forEach((d,j)=>{d.classList.remove('on');void d.offsetWidth;d.classList.toggle('on',j===cur)});clearInterval(timer);timer=setInterval(()=>go(cur+1),5500)}
+(()=>{let x0=null;document.addEventListener('touchstart',e=>{if(e.target.closest('#vview'))x0=e.touches[0].clientX},{passive:true});document.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(cur+(dx<0?1:-1));x0=null})})();
+
+/* ================= PRODUCT PAGE ================= */
+let pdp={};
+const CARRIERS=['Unlocked','AT&T','Verizon','T-Mobile'];
+const planFor=p=>p.cat==='phones'?[['No protection plan',0,''],['TechMartPro Care — 1 year',79,'Accidental damage, battery and repairs'],['TechMartPro Care — 2 years',129,'Everything in 1 year, plus 12 more months']]:p.p>=200?[['No protection plan',0,''],['TechMartPro Care — 1 year',39,'Accidental damage and repairs'],['TechMartPro Care — 2 years',69,'Everything in 1 year, plus 12 more months']]:null;
+const ADDONS={phones:['gan65','anker20k'],tablets:['gan65','anker20k'],wearables:['anker20k'],audio:['anker20k'],gadgets:['anker20k','gan65']};
+function productHTML(p){pdp={id:p.id,c:0,s:0,q:1,v:0,cr:p.cat==='phones'?0:null,pl:0,ad:[]};const plans=planFor(p),ads=(ADDONS[p.cat]||[]).filter(i=>i!==p.id).map(i=>byId[i]);const rel=P.filter(x=>x.cat===p.cat&&x.id!==p.id).concat(P.filter(x=>x.cat!==p.cat)).slice(0,4);
+ const catName=(CATS.find(c=>c.k===p.cat)||{}).n;
+ return `<div class="wrap"><div class="crumbs"><a href="#home">Home</a> / <a href="#home-shop" data-filter="${p.cat==='gadgets'||p.cat==='accessories'?'acc':p.cat}">${catName}</a> / ${p.n}</div>
+ <div class="pdp">
+  <div class="gal"><div class="thumbs">${[0,1,2,3].map(i=>`<button data-v="${i}" class="${i?'':'on'}"><div class="view v${i}">${img(p)}</div></button>`).join('')}</div><div class="main" id="gmain"><div class="view" id="gview">${img(p)}</div></div></div>
+  <div class="info">
+   <div style="display:flex;gap:6px;margin-bottom:12px">${p.bd.map(badge).join('')}</div>
+   <span class="br">${p.b}</span><h1>${p.n}</h1><p class="sub">${p.d}</p>
+   <div class="stock"><i></i>In stock — ships within 24 hours</div>
+   <div id="pprice"></div>
+   ${p.colors.length?`<div class="opt"><div class="lbl">Color: <span id="cname">${p.colors[0][0]}</span></div><div class="chips">${p.colors.map((c,i)=>`<button class="chip ${i?'':'on'}" data-c="${i}"><span class="dot" style="background:${c[1]}"></span>${c[0]}</button>`).join('')}</div></div>`:''}
+   ${p.st?`<div class="opt"><div class="lbl">${p.cat==='wearables'?'Case size':'Storage'}: <span id="sname">${p.st[0][0]}</span></div><div class="chips">${p.st.map((s,i)=>`<button class="chip ${i?'':'on'}" data-s="${i}">${s[0]}${s[1]?` <small>+${money(s[1])}</small>`:''}</button>`).join('')}</div></div>`:''}
+   ${p.cat==='phones'?`<div class="opt"><div class="lbl">Carrier: <span id="crname">Unlocked</span></div><div class="chips">${CARRIERS.map((c,i)=>`<button class="chip ${i?'':'on'}" data-cr="${i}">${c}</button>`).join('')}</div></div>`:''}
+   ${plans?`<div class="opt"><div class="lbl">Protection</div><div class="plans">${plans.map((x,i)=>`<label class="plan ${i?'':'on'}"><input type="radio" name="plan" value="${i}" ${i?'':'checked'}><span class="t">${x[0]}${x[2]?`<small>${x[2]}</small>`:''}</span><b>${x[1]?'+'+money(x[1]):''}</b></label>`).join('')}</div></div>`:''}
+   ${ads.length?`<div class="opt"><div class="lbl">Add to your order</div><div class="addons">${ads.map(a=>`<label class="addon"><input type="checkbox" data-ad="${a.id}"><div class="th">${img(a)}</div><span class="t">${a.n}</span><b>${money(a.p)}${a.w?`<small>Save ${money(a.w-a.p)}</small>`:''}</b></label>`).join('')}</div></div>`:''}
+   <div class="qrow" id="buyrow"><div class="qty"><button data-pq="-1">−</button><span id="pq">1</span><button data-pq="1">+</button></div><button class="btn ol" id="pAdd">Add to Cart</button></div>
+   <button class="btn pri buynow" id="pBuy">Buy Now</button>
+   <button class="pfav ${wish.includes(p.id)?'on':''}" data-fav="${p.id}" aria-pressed="${wish.includes(p.id)}">${HEART}<span>${wish.includes(p.id)?'Saved to wishlist':'Save to wishlist'}</span></button>
+   ${['phones','tablets','wearables'].includes(p.cat)?`<a class="tradelink" href="#home-trade">${ic.ret}<span><b>Trade in</b> your old device and get credit toward this one.</span></a>`:''}
+   <div class="trustrow"><div>${ic.ship}Free Shipping<br>over $100</div><div>${ic.ret}30-Day<br>Return</div><div>${ic.war}1-Year<br>Warranty</div></div>
+   <div class="acc">
+    <details open><summary>Highlights</summary><div class="ab"><ul><li>${p.d}</li><li>Brand-new, factory-sealed ${p.b} product</li><li>Official manufacturer warranty plus TechMartPro 1-year cover</li><li>Free setup help from our tech team</li></ul></div></details>
+    <details><summary>What's in the box</summary><div class="ab"><ul>${(BOX[p.cat]||[]).map(x=>`<li>${x}</li>`).join('')}</ul><p style="margin-top:8px;font-size:13px;color:var(--muted)">Box contents may vary by region and manufacturer.</p></div></details>
+    <details><summary>Shipping &amp; Returns</summary><div class="ab">Free standard shipping on orders over $100 (3–5 business days). Express 1–2 day shipping available at checkout. Changed your mind? Return unused items within 30 days for a full refund.</div></details>
+    <details><summary>Payment Methods</summary><div class="ab">Pay securely by credit or debit card, PayPal, Apple Pay or Google Pay — or split into 4 interest-free payments.<div class="paylogos"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>DISCOVER</span><span>PAYPAL</span><span>APPLE PAY</span><span>G PAY</span></div></div></details>
+   </div>
+  </div>
+ </div></div>
+ <section class="hl"><div class="wrap"><h2 style="font-size:clamp(28px,3vw,40px)">Why buy ${p.n} from TechMartPro</h2>
+ <div class="hlg"><div>${ic.war}<h4>Genuine &amp; sealed</h4><p>Sourced through authorized channels and covered by the official ${p.b} warranty.</p></div><div>${ic.ship}<h4>Fast, tracked delivery</h4><p>Order before 3 PM for same-day dispatch, with live tracking to your door.</p></div><div>${ic.spark}<h4>Free setup help</h4><p>Our team will help you set up your device and transfer data from your old one.</p></div></div></div></section>
+ <section class="blk" style="padding-top:70px"><div class="wrap" style="max-width:980px">
+  <h2 style="font-size:32px">Specifications</h2>
+  <table class="spec"><tr><td>Brand</td><td>${p.b}</td></tr><tr><td>Model</td><td>${p.n}</td></tr><tr><td>Category</td><td>${catName}</td></tr><tr><td>Colors</td><td>${p.colors.map(c=>c[0]).join(', ')}</td></tr>${p.st?`<tr><td>${p.cat==='wearables'?'Case sizes':'Storage options'}</td><td>${p.st.map(s=>s[0]).join(', ')}</td></tr>`:''}<tr><td>Condition</td><td>Brand new, factory sealed</td></tr><tr><td>Warranty</td><td>Manufacturer warranty + 1-year TechMartPro cover</td></tr></table>
+  <h2 style="font-size:32px;margin-top:60px">Customer Reviews</h2>
+  <div class="rev"><div><b style="font:700 18px var(--head)">No reviews yet</b><p>Bought this from us? Be the first to share your experience.</p></div><button class="btn ol" data-review>Write a Review</button></div>
+ </div></section>
+ <section class="blk" style="padding-top:20px"><div class="wrap"><div class="sh"><div><h2>You may also like</h2></div></div><div class="grid">${rel.map(card).join('')}</div></div></section>
+ ${rvHTML(p.id)}
+ ${benefitsHTML()}`}
+function pdpPrice(){const p=byId[pdp.id];const pl=planFor(p);const add=(p.st?p.st[pdp.s][1]:0)+(pl?pl[pdp.pl][1]:0);const now=p.p+add,was=p.w?p.w+add:null;
+ $('#pprice').innerHTML=`<div class="prc ${was?'sale':''}"><b>${money(now)}</b>${was?`<s>${money(was)}</s><span class="save">Save ${money(was-now)}</span>`:''}</div><div class="inst">or 4 interest-free payments of <b>${money(now/4)}</b></div>`;
+ $('#pAdd').textContent='Add to Cart';
+ const v=[p.colors[pdp.c][0],p.st?p.st[pdp.s][0]:null,pdp.cr!=null?CARRIERS[pdp.cr]:null].filter(Boolean).join(' / ');
+ $('#sticky').innerHTML=`<div class="wrap"><div class="th">${img(p)}</div><div class="sp"><b>${p.n}</b><small>${v}</small></div><div class="pp">${money(now*pdp.q)}</div><button class="btn pri" data-stickyadd>Add to Cart</button></div>`}
+function bindPDP(){const p=byId[pdp.id];pdpPrice();
+ $$('[data-c]').forEach(b=>b.onclick=()=>{pdp.c=+b.dataset.c;$$('[data-c]').forEach(x=>x.classList.toggle('on',x===b));$('#cname').textContent=p.colors[pdp.c][0];pdpPrice()});
+ $$('[data-s]').forEach(b=>b.onclick=()=>{pdp.s=+b.dataset.s;$$('[data-s]').forEach(x=>x.classList.toggle('on',x===b));$('#sname').textContent=p.st[pdp.s][0];pdpPrice()});
+ $$('[data-pq]').forEach(b=>b.onclick=()=>{pdp.q=Math.max(1,pdp.q+ +b.dataset.pq);$('#pq').textContent=pdp.q;pdpPrice()});
+ $$('[data-v]').forEach(b=>b.onclick=()=>{$$('[data-v]').forEach(x=>x.classList.toggle('on',x===b));$('#gview').className='view v'+b.dataset.v;$('#gmain').classList.remove('zoom')});
+ $('#gmain').onclick=()=>$('#gmain').classList.toggle('zoom');
+ $$('[data-cr]').forEach(b=>b.onclick=()=>{pdp.cr=+b.dataset.cr;$$('[data-cr]').forEach(x=>x.classList.toggle('on',x===b));$('#crname').textContent=CARRIERS[pdp.cr];pdpPrice()});
+ $$('input[name=plan]').forEach(r=>r.onchange=()=>{pdp.pl=+r.value;$$('.plan').forEach(l=>l.classList.toggle('on',l.querySelector('input').checked));pdpPrice()});
+ $$('[data-ad]').forEach(c=>c.onchange=()=>{c.closest('.addon').classList.toggle('on',c.checked);pdp.ad=$$('[data-ad]').filter(x=>x.checked).map(x=>x.dataset.ad)});
+ const addAll=open=>{addLine(pdpLine(),open);pdp.ad.forEach(a=>addLine({id:a,c:0,s:null,q:1},false))};
+ $('#pAdd').onclick=()=>addAll(true);
+ $('#pBuy').onclick=()=>{addAll(false);location.hash='checkout'};
+ stickyCheck()}
+function stickyCheck(){const r=$('#buyrow'),st=$('#sticky');if(!r||!location.hash.startsWith('#p-')){st.classList.remove('on');return}st.classList.toggle('on',r.getBoundingClientRect().bottom<0)}
+let stRaf=0;window.addEventListener('scroll',()=>{if(stRaf)return;stRaf=requestAnimationFrame(()=>{stRaf=0;stickyCheck()})},{passive:true});
+const pdpLine=()=>{const p=byId[pdp.id];return {id:p.id,c:pdp.c,s:p.st?pdp.s:null,q:pdp.q,cr:pdp.cr,pl:planFor(p)?pdp.pl:0}};
+
+/* ================= CART ================= */
+let cart=store.get('tmp-cart2',[]);
+const save=()=>store.set('tmp-cart2',cart);
+function lineInfo(l){if(l.b){const b=BUNDLES.find(x=>x.id===l.b);return {n:b.n,v:b.items.map(i=>byId[i].n).join(' + '),p:b.p,imgs:b.items.map(i=>byId[i]),thumb:img(byId[b.items[0]])}}
+ const p=byId[l.id];const pl=planFor(p),plan=pl&&l.pl?pl[l.pl]:null;const add=(p.st&&l.s!=null?p.st[l.s][1]:0)+(plan?plan[1]:0);return {n:p.n,v:[p.colors[l.c||0][0],p.st&&l.s!=null?p.st[l.s][0]:null,l.cr!=null?CARRIERS[l.cr]:null,plan?plan[0].replace('TechMartPro Care — ','Care ')+' plan':null].filter(Boolean).join(' / '),p:p.p+add,thumb:img(p)}}
+function addLine(l,open=true){const key=l.b?'b:'+l.b:[l.id,l.c,l.s,l.cr,l.pl].join(':');const ex=cart.find(x=>x.k===key);if(ex)ex.q+=l.q||1;else cart.push({...l,q:l.q||1,k:key});save();renderCart();if(open){openDrawer()}else toast(lineInfo(l).n+' added to cart')}
+const sub=()=>cart.reduce((s,l)=>s+lineInfo(l).p*l.q,0);
+function renderCart(){const n=cart.reduce((s,l)=>s+l.q,0),st=sub();const cc=$('#ccount');cc.textContent=n;cc.classList.toggle('on',n>0);
+ const need=Math.max(0,100-st);$('#ship').innerHTML=(n?need>0?`You're <b>${money(need)}</b> away from free shipping`:`🎉 You've unlocked <b>free shipping</b>`:`Free shipping on orders over <b>$100</b>`)+`<div class="bar"><i style="width:${Math.min(100,st)}%"></i></div>`;
+ $('#items').innerHTML=n?cart.map((l,i)=>{const x=lineInfo(l);return `<div class="ci"><div class="th">${x.thumb}</div><div><b>${x.n}</b><small>${x.v}</small><br><div class="qty"><button data-q="${i}:-1">−</button><span>${l.q}</span><button data-q="${i}:1">+</button></div></div><div class="rt">${money(x.p*l.q)}<button class="rm" data-rm="${i}">Remove</button></div></div>`}).join(''):`<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><h4>Your cart is empty</h4><p>Have an account? Log in to check out faster.</p><button class="btn dk" data-close>Continue shopping</button></div>`;
+ if(n){const inCart=new Set(cart.map(l=>l.id));const acc=P.filter(x=>['accessories'].includes(x.cat)&&!inCart.has(x.id)).sort((a,b)=>a.p-b.p);let pick=null,msg='';if(acc.length){if(need>0){pick=acc.find(x=>x.p>=need)||acc[acc.length-1];msg=pick.p>=need?'Add this and unlock free shipping':`Add ${money(need)} more for free shipping`}else{pick=acc[0];msg='Complete your setup'}}
+  if(pick)$('#items').insertAdjacentHTML('beforeend',`<div class="upsell"><h5>${msg}</h5><div class="urow"><div class="th">${img(pick)}</div><div class="t">${pick.n}<br><span>${money(pick.p)}${pick.w?` · was ${money(pick.w)}`:''}</span></div><button data-upadd="${pick.id}">Add</button></div></div>`)}
+ $('#dfoot').innerHTML=`<div class="row"><span>Subtotal</span><span>${money(st)} USD</span></div><small>Taxes and shipping calculated at checkout.</small><button class="btn pri" id="toCheckout" ${n?'':'disabled style="opacity:.45;cursor:not-allowed"'}>Check Out</button><div class="trust"><span>${ic.ship}Free Shipping</span><span>${ic.ret}30-Day Return</span><span>${ic.war}1-Year Warranty</span></div>`}
+$('#items').onclick=e=>{const q=e.target.closest('[data-q]'),rm=e.target.closest('[data-rm]');if(q){const [i,d]=q.dataset.q.split(':').map(Number);cart[i].q+=d;if(cart[i].q<1)cart.splice(i,1);save();renderCart()}if(rm){cart.splice(+rm.dataset.rm,1);save();renderCart()}};
+
+/* ================= CHECKOUT ================= */
+let co={ship:'std',pay:'card',disc:0,code:''};
+const STATES=['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
+function shipCost(){const s=sub();if(co.ship==='exp')return 19.99;return s>=100?0:9.99}
+function summaryHTML(){const s=sub(),d=s*co.disc,sh=shipCost(),tax=0,t=s-d+sh+tax;
+ return `${cart.map(l=>{const x=lineInfo(l);return `<div class="sline"><div class="th">${x.thumb}<i>${l.q}</i></div><div><b>${x.n}</b><small>${x.v}</small></div><div class="p">${money(x.p*l.q)}</div></div>`}).join('')}
+ <form class="disc" data-disc><div class="fld"><input id="dcode" placeholder=" " value="${co.code}"><label>Discount code or gift card</label></div><button type="submit">Apply</button></form>
+ <div class="dmsg" id="dmsg">${co.disc?`<span style="color:var(--ok)">✓ ${co.code.toUpperCase()} applied — ${co.disc*100}% off</span>`:'<span style="color:var(--muted)">Try code <b>WELCOME10</b> for 10% off</span>'}</div>
+ <div class="tot"><div><span>Subtotal · ${cart.reduce((a,l)=>a+l.q,0)} items</span><span>${money(s)}</span></div>${d?`<div><span>Discount</span><span style="color:var(--ok)">−${money(d)}</span></div>`:''}<div><span>Shipping</span><span>${sh?money(sh):'FREE'}</span></div><div><span>Sales tax</span><span style="color:var(--muted)">Calculated at next step</span></div><div class="big"><span>Total</span><span><small>USD</small>${money(t)}</span></div></div>`}
+function checkoutHTML(){if(!cart.length)return `<div class="ty" style="text-align:center"><h1>Your cart is empty</h1><p class="oid">Add something you love, then come back to check out.</p><a class="btn pri" href="#home">Continue Shopping</a></div>`;
+ const f=(id,l,t='text',ex='')=>`<div class="fld"><input id="${id}" type="${t}" placeholder=" " ${ex}><label>${l}</label><div class="em">${{zip:'Enter a valid 5-digit ZIP code',phone:'Enter a valid 10-digit phone number',email:'Enter a valid email address'}[id]||'Please enter '+l.toLowerCase()}</div></div>`;
+ return `<div class="cohead"><div class="wrap"><a href="#home" class="logo"><img src="logo.png" alt="TechMartPro"></a><span class="sec">${ic.lock}Secure checkout</span></div></div>
+ <div class="co"><div class="left"><form id="coForm" novalidate>
+  <details class="mobsum"><summary><span>Show order summary</span><span id="mtot"></span></summary><div class="ms" id="msum"></div></details>
+  <div style="text-align:center;font-size:13px;color:var(--muted);margin-bottom:12px">Express checkout</div>
+  <div class="express"><button type="button" class="ex1" data-express>Apple Pay</button><button type="button" class="ex2" data-express><i style="font-style:italic;font-weight:800">PayPal</i></button><button type="button" class="ex3" data-express>Google Pay</button></div>
+  <div class="or">OR</div>
+  <h3>Contact <a href="#" data-login>Log in</a></h3>
+  ${f('email','Email','email','autocomplete="email"')}
+  <label class="chk"><input type="checkbox" checked> Email me with news and offers</label>
+  <h3>Delivery</h3>
+  <div class="row2">${f('fname','First name','text','autocomplete="given-name"')}${f('lname','Last name','text','autocomplete="family-name"')}</div>
+  ${f('addr','Address','text','autocomplete="street-address"')}
+  <div class="fld"><input id="apt" placeholder=" "><label>Apartment, suite, etc. (optional)</label></div>
+  <div class="row3">${f('city','City','text','autocomplete="address-level2"')}<div class="fld"><select id="state" autocomplete="address-level1"><option value="">Select</option>${STATES.map(x=>`<option>${x}</option>`).join('')}</select><label>State</label><div class="em">Please select a state</div></div>${f('zip','ZIP code','text','autocomplete="postal-code" inputmode="numeric" maxlength="10"')}</div>
+  ${f('phone','Phone (for delivery updates)','tel','autocomplete="tel" inputmode="tel"')}
+  <h3>Shipping method</h3>
+  <div class="radios" id="shipR">
+   <label class="radio"><input type="radio" name="ship" value="std" checked><span class="t">Standard Shipping<small>3–5 business days · Free over $100</small></span><b id="stdp"></b></label>
+   <label class="radio"><input type="radio" name="ship" value="exp"><span class="t">Express Shipping<small>1–2 business days</small></span><b>$19.99</b></label>
+  </div>
+  <h3>Payment</h3><p style="font-size:13px;color:var(--muted);margin:-8px 0 12px">All transactions are secure and encrypted.</p>
+  <div class="radios" id="payR">
+   <label class="radio"><input type="radio" name="pay" value="card" checked><span class="t">Credit / Debit Card</span><span class="tags"><span>VISA</span><span>MC</span><span>AMEX</span></span></label>
+   <div class="paynote" data-note="card">After clicking “Pay now”, you'll be redirected to our secure payment partner to enter your card details. TechMartPro never stores your card information.</div>
+   <label class="radio"><input type="radio" name="pay" value="paypal"><span class="t">PayPal</span></label>
+   <div class="paynote" data-note="paypal">You'll be redirected to PayPal to complete your purchase securely.</div>
+   <label class="radio"><input type="radio" name="pay" value="pay4"><span class="t">Pay in 4<small>4 interest-free payments of ${money((sub()-sub()*co.disc+shipCost())/4)}</small></span></label>
+   <div class="paynote" data-note="pay4">Split your purchase into 4 interest-free payments, every 2 weeks. You'll complete a quick approval with our installment partner.</div>
+  </div>
+  <h3>Billing address</h3>
+  <div class="radios"><label class="radio on"><input type="radio" name="bill" checked><span class="t">Same as shipping address</span></label><label class="radio"><input type="radio" name="bill"><span class="t">Use a different billing address</span></label></div>
+  <button class="btn pri payall" type="submit" id="payBtn">Pay now</button>
+  <div class="secure"><span>${ic.lock}256-bit SSL encrypted</span><span>${ic.war}Buyer protection</span><span>${ic.ret}30-day returns</span></div>
+  <p class="pnote">Online payments are not yet active on this store.</p>
+  <div class="copol"><a href="#">Refund policy</a><a href="#">Shipping policy</a><a href="#">Privacy policy</a><a href="#">Terms of service</a></div>
+ </form></div>
+ <div class="right"><div class="in" id="sum"></div></div></div>`}
+function refreshSummary(){const h=summaryHTML();$('#sum').innerHTML=h;$('#msum').innerHTML=h;const s=sub(),t=s-s*co.disc+shipCost();$('#mtot').textContent=money(t);$('#stdp').textContent=s>=100?'FREE':'$9.99';
+ $$('[data-disc]').forEach(f=>f.onsubmit=e=>{e.preventDefault();const v=f.querySelector('input').value.trim();if(v.toUpperCase()==='WELCOME10'){co.disc=.1;co.code=v;refreshSummary();toast('Discount applied')}else{co.disc=0;co.code=v;refreshSummary();f.nextElementSibling.innerHTML='<span style="color:var(--sale)">Enter a valid discount code</span>'}})}
+function bindCheckout(){if(!cart.length)return;refreshSummary();
+ const sync=()=>{$$('.radios').forEach(r=>r.querySelectorAll('.radio').forEach(l=>l.classList.toggle('on',l.querySelector('input').checked)));co.ship=$('input[name=ship]:checked').value;co.pay=$('input[name=pay]:checked').value;$$('.paynote').forEach(n=>n.classList.toggle('on',n.dataset.note===co.pay));$('#payBtn').textContent=co.pay==='pay4'?'Continue to Pay in 4':co.pay==='paypal'?'Pay with PayPal':'Pay now';refreshSummary()};
+ $$('.radios input').forEach(i=>i.onchange=sync);sync();
+ $('#phone').addEventListener('input',e=>{let d=e.target.value.replace(/\D/g,'');if(d.length===11&&d[0]==='1')d=d.slice(1);d=d.slice(0,10);e.target.value=d.length>6?`(${d.slice(0,3)}) ${d.slice(3,6)}-${d.slice(6)}`:d.length>3?`(${d.slice(0,3)}) ${d.slice(3)}`:d});
+ $('#zip').addEventListener('input',e=>{e.target.value=e.target.value.replace(/[^\d-]/g,'').slice(0,10)});
+ $$('[data-express]').forEach(b=>b.onclick=()=>toast('Express checkout will work once payments are connected'));
+ $('#coForm').onsubmit=e=>{e.preventDefault();let ok=true;
+  ['email','fname','lname','addr','city','state','zip','phone'].forEach(id=>{const el=$('#'+id),v=el.value.trim();let bad=!v;if(id==='email')bad=!/^\S+@\S+\.\S+$/.test(v);if(id==='zip')bad=!/^\d{5}(-\d{4})?$/.test(v);if(id==='phone')bad=v.replace(/\D/g,'').length<10;el.parentElement.classList.toggle('err',bad);if(bad&&ok){ok=false;el.focus()}});
+  if(!ok){toast('Please complete the highlighted fields');return}
+  const s=sub(),order={no:'TMP-'+Math.floor(100000+Math.random()*900000),name:$('#fname').value.trim(),email:$('#email').value.trim(),addr:[$('#addr').value,$('#apt').value,$('#city').value,$('#state').value,$('#zip').value].filter(Boolean).join(', '),phone:$('#phone').value,ship:co.ship,pay:co.pay,lines:cart.map(l=>({...lineInfo(l),q:l.q,thumb:undefined,id:l.id||byId[BUNDLES.find(b=>b.id===l.b).items[0]].id})),total:s-s*co.disc+shipCost()};
+  store.set('tmp-order',order);cart=[];save();renderCart();co.disc=0;co.code='';location.hash='thank-you'}}
+
+function thanksHTML(){const o=store.get('tmp-order',null);if(!o)return `<div class="ty" style="text-align:center"><h1>No recent order</h1><a class="btn pri" href="#home" style="margin-top:20px">Continue Shopping</a></div>`;
+ return `<div class="cohead"><div class="wrap"><a href="#home" class="logo"><img src="logo.png" alt="TechMartPro"></a><span class="sec">${ic.lock}Secure checkout</span></div></div>
+ <div class="ty"><div class="ck"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg></div>
+ <p style="color:var(--muted)">Order ${o.no}</p><h1>Thank you, ${o.name}!</h1><p class="oid">Your order is confirmed. A confirmation will be sent to ${o.email}.</p>
+ <div class="tybox"><h4>Order status</h4><p>Confirmed — we're preparing your order for dispatch.</p><div class="steps"><div class="on"></div><div></div><div></div><div></div></div><p style="display:flex;justify-content:space-between;font-size:12px;margin-top:6px"><span>Confirmed</span><span>Packed</span><span>Shipped</span><span>Delivered</span></p></div>
+ <div class="tybox"><h4>Order details</h4>${o.lines.map(l=>`<div class="sline"><div class="th"><img class="pimg" src="img/${l.id}.jpg" alt=""><i>${l.q}</i></div><div><b>${l.n}</b><small>${l.v}</small></div><div class="p">${money(l.p*l.q)}</div></div>`).join('')}<div class="tot" style="border-top:1px solid var(--line);padding-top:14px"><div class="big"><span>Order total</span><span><small>USD</small>${money(o.total)}</span></div></div></div>
+ <div class="tybox"><h4>Delivery</h4><p>${o.addr}<br>${o.phone}<br>${o.ship==='exp'?'Express Shipping (1–2 business days)':'Standard Shipping (3–5 business days)'}<br>Payment: ${{card:'Credit / Debit Card',paypal:'PayPal',pay4:'Pay in 4'}[o.pay]}</p></div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-top:24px;flex-wrap:wrap;gap:12px"><span style="font-size:14px;color:var(--muted)">Need help? <a href="#" style="color:var(--blue);text-decoration:underline">Contact us</a></span><a class="btn pri" href="#home">Continue Shopping</a></div></div>`}
+
+/* ================= WISHLIST / COMPARE / 404 ================= */
+function syncWish(){store.set('tmp-wish',wish);const c=$('#wcount');c.textContent=wish.length;c.classList.toggle('on',wish.length>0)}
+function toggleWish(id){const on=!wish.includes(id);wish=on?[id,...wish]:wish.filter(x=>x!==id);syncWish();
+ $$(`[data-fav="${id}"]`).forEach(b=>{b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);b.classList.remove('pop');void b.offsetWidth;on&&b.classList.add('pop');const sp=b.querySelector('span');if(sp)sp.textContent=on?'Saved to wishlist':'Save to wishlist'});
+ toast(on?byId[id].n+' saved to wishlist':'Removed from wishlist');if(location.hash==='#wishlist')$('#app').innerHTML=wishHTML()}
+function wishHTML(){const l=wish.filter(id=>byId[id]).map(id=>byId[id]);return `<div class="wrap"><div class="pagehead"><h1>Your Wishlist</h1><p>${l.length?`${l.length} saved item${l.length>1?'s':''}`:'Save products you love and come back to them anytime.'}</p></div>${l.length?`<div class="grid" style="margin:26px 0 90px">${l.map(card).join('')}</div>`:`<div class="emptyp"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#c4c8d0" stroke-width="1.5" style="margin:0 auto"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg><p>Your wishlist is empty. Tap the heart on any product to save it here.</p><a class="btn pri" href="#home-shop">Start Shopping</a></div>`}</div>`}
+function toggleCmp(id,on){if(on&&!cmp.includes(id)){if(cmp.length>=3){toast('You can compare up to 3 products');$$(`[data-cmp="${id}"]`).forEach(c=>c.checked=false);return}cmp.push(id)}if(!on)cmp=cmp.filter(x=>x!==id);store.set('tmp-cmp',cmp);$$(`[data-cmp="${id}"]`).forEach(c=>c.checked=on);renderTray();if(location.hash==='#compare')$('#app').innerHTML=compareHTML()}
+function renderTray(){const t=$('#ctray');const hh=location.hash||'#home';const show=cmp.length>0&&(hh==='#home'||hh.startsWith('#home-')||hh==='#wishlist');
+ t.innerHTML=cmp.map(id=>`<div class="ct">${img(byId[id])}<button data-uncmp="${id}" aria-label="Remove ${byId[id].n} from compare">✕</button></div>`).join('')+`<span class="ctxt">${cmp.length<2?'Add one more to compare':cmp.length+' selected'}</span><a class="btn pri" href="#compare" ${cmp.length<2?'aria-disabled="true" style="opacity:.5;pointer-events:none"':''}>Compare</a>`;t.classList.toggle('on',show);document.body.classList.toggle('tray-on',show)}
+function compareHTML(){const l=cmp.map(id=>byId[id]).filter(Boolean);if(l.length<2)return `<div class="wrap"><div class="pagehead"><h1>Compare</h1></div><div class="emptyp"><p>Select at least 2 products with the “Compare” checkbox to see them side by side.</p><a class="btn pri" href="#home-shop">Browse Products</a></div></div>`;
+ const row=(h,f)=>`<tr><th scope="row">${h}</th>${l.map(p=>`<td>${f(p)}</td>`).join('')}</tr>`;const cat=p=>(CATS.find(c=>c.k===p.cat)||{}).n;
+ return `<div class="wrap" style="padding-bottom:90px"><div class="pagehead"><h1>Compare</h1><p>Side by side, so you can pick with confidence.</p></div><div class="cmpwrap"><table class="cmpt"><tr><th scope="row"></th>${l.map(p=>`<td><a href="#p-${p.id}"><div class="ci2">${img(p)}</div><b>${p.n}</b></a><button class="rm2" data-uncmp="${p.id}">Remove</button></td>`).join('')}</tr>
+ ${row('Price',p=>`<b>${money(p.p)}</b>${p.w?` <s style="color:#9a9ea7">${money(p.w)}</s>`:''}`)}${row('Brand',p=>p.b)}${row('Category',cat)}${row('Overview',p=>p.d)}${row('Colors',p=>p.colors.map(c=>c[0]).join(', '))}${row('Options',p=>p.st?p.st.map(x=>x[0]).join(', '):'—')}${row('Deal',p=>p.w?`<span style="color:var(--sale);font-weight:600">Save ${money(p.w-p.p)}</span>`:'—')}${row('Warranty',()=>'Manufacturer + 1-year TechMartPro')}${row('',p=>`<button class="btn dk" style="padding:13px 20px;font-size:12px" data-add="${p.id}">Add to Cart</button>`)}</table></div></div>`}
+function notFoundHTML(){return `<div class="nf"><div class="code">404</div><h1>We couldn't find that page</h1><p>The link may be broken or the page may have moved.</p><a class="btn pri" href="#home">Back to Home</a> <a class="btn ol" href="#home-shop" style="margin-left:8px">Shop All</a></div>`}
+function setMeta(desc,prod){document.querySelector('meta[name=description]').setAttribute('content',desc);let j=document.getElementById('pld');if(j)j.remove();if(prod){j=document.createElement('script');j.type='application/ld+json';j.id='pld';j.textContent=JSON.stringify({"@context":"https://schema.org","@type":"Product",name:prod.n,brand:{"@type":"Brand",name:prod.b},description:prod.d,image:prod.img,offers:{"@type":"Offer",price:prod.p.toFixed(2),priceCurrency:"USD",availability:"https://schema.org/InStock"}});document.head.appendChild(j)}}
+const DEF_DESC=document.querySelector('meta[name=description]').getAttribute('content');
+
+/* ================= ROUTER ================= */
+if('scrollRestoration' in history)history.scrollRestoration='manual';
+let curRoute=null,homeY=0;
+const jump=y=>{const r=document.documentElement;r.style.scrollBehavior='auto';window.scrollTo({top:y,left:0,behavior:'instant'});requestAnimationFrame(()=>{window.scrollTo({top:y,left:0,behavior:'instant'});r.style.scrollBehavior=''})};
+function route(){const h=(location.hash||'#home').slice(1);if(curRoute!==null&&(curRoute==='home'||curRoute.startsWith('home')))homeY=window.scrollY;const prev=curRoute;curRoute=h;closeAll();$('#toast').classList.remove('on');window.closeMega&&closeMega();$('#sticky').classList.remove('on');
+ const app=$('#app');let chrome=true,anchor=null;
+ document.body.classList.toggle('pdp-on',h.startsWith('p-'));setMeta(DEF_DESC);if(h.startsWith('p-')&&byId[h.slice(2)]){const pr=byId[h.slice(2)];rv=[pr.id,...rv.filter(x=>x!==pr.id)].slice(0,8);store.set('tmp-rv',rv);app.innerHTML=productHTML(pr);bindPDP();document.title=pr.n+' — TechMartPro';setMeta(`Buy ${pr.n} at TechMartPro. ${pr.d} Free shipping over $100, 30-day returns.`,pr)}
+ else if(h==='wishlist'){app.innerHTML=wishHTML();document.title='Wishlist — TechMartPro'}
+ else if(h==='compare'){app.innerHTML=compareHTML();document.title='Compare — TechMartPro'}
+ else if(h==='checkout'){chrome=false;app.innerHTML=checkoutHTML();bindCheckout();document.title='Checkout — TechMartPro'}
+ else if(h==='thank-you'){chrome=false;app.innerHTML=thanksHTML();document.title='Order confirmed — TechMartPro'}
+ else if(h&&h!=='home'&&!h.startsWith('home-')){app.innerHTML=notFoundHTML();document.title='Page not found — TechMartPro'}
+ else{if(!$('#grid')||!app.dataset.home){app.innerHTML=homeHTML();app.dataset.home=1;renderGrid();go(0)}const rh=$('#rvHome');if(rh)rh.innerHTML=rvHTML();document.title='TechMartPro — Phones, Earbuds, Tablets & Gadgets';if(h.startsWith('home-'))anchor=h}
+ if(!(h==='home'||h.startsWith('home')))app.dataset.home='';
+ renderTray();$('#shell').style.display=chrome?'':'none';$('#foot').style.display=chrome?'':'none';
+ if(anchor){const el=document.getElementById(anchor);const fromHome=prev&&prev.startsWith('home');if(el)setTimeout(()=>{if(fromHome)el.scrollIntoView({behavior:'smooth'});else{const r=document.documentElement;r.style.scrollBehavior='auto';el.scrollIntoView({behavior:'instant'});r.style.scrollBehavior=''}},30)}else if(h==='home'&&prev&&prev.startsWith('p-')){jump(homeY)}else jump(0)}
+window.addEventListener('hashchange',route);
+
+/* ================= OVERLAYS + EVENTS ================= */
+const scrim=$('#scrim');
+function show(el){closeAll();el.classList.add('on');if(!el.classList.contains('modal'))scrim.classList.add('on');document.body.style.overflow='hidden'}
+function closeAll(){$$('.drawer.on,.modal.on,.search.on,.mnav.on').forEach(x=>x.classList.remove('on'));scrim.classList.remove('on');document.body.style.overflow=''}
+const openDrawer=()=>show($('#drawer'));
+$('#cartBtn').onclick=openDrawer;$('#wishBtn').onclick=()=>{location.hash='wishlist'};scrim.onclick=closeAll;
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAll()});
+$$('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeAll()}));
+$('#searchBtn').onclick=()=>{show($('#search'));setTimeout(()=>$('#sinput').focus(),300);doSearch()};
+$('#loginBtn').onclick=()=>show($('#lmodal'));
+$('#burgerBtn').onclick=()=>show($('#mnav'));
+$('#loginForm').onsubmit=e=>{e.preventDefault();closeAll();toast('Logged in — welcome back!')};
+function doSearch(){const v=$('#sinput').value.trim().toLowerCase();const l=v?P.filter(p=>(p.n+' '+p.b+' '+p.cat+' '+p.d).toLowerCase().includes(v)):P.filter(p=>p.bd.includes('hot'));
+ $('#sres').innerHTML=(v?'':'<div class="shint">Trending now</div>')+(l.length?`<div class="sres">${l.map(p=>`<a href="#p-${p.id}"><div class="th">${img(p)}</div><div><b>${p.n}</b><small>${money(p.p)}</small></div></a>`).join('')}</div>`:`<div class="shint">No results for “${v}”. Try “phone”, “watch” or “earbuds”.</div>`)}
+$('#sinput').oninput=doSearch;
+
+
+document.addEventListener('change',e=>{const c=e.target.closest('[data-cmp]');if(c)toggleCmp(c.dataset.cmp,c.checked)});
+document.addEventListener('click',e=>{const t=e.target;
+ const fv=t.closest('[data-fav]');if(fv){e.preventDefault();toggleWish(fv.dataset.fav);return}
+ const uc=t.closest('[data-uncmp]');if(uc){toggleCmp(uc.dataset.uncmp,false);return}
+ if(t.closest('[data-fsale]')){F.sale=!F.sale;renderGrid();return}
+ const fb=t.closest('[data-fbrand]');if(fb){const b=fb.dataset.fbrand;F.brands=F.brands.includes(b)?F.brands.filter(x=>x!==b):[...F.brands,b];renderGrid();return}
+ if(t.closest('[data-fclear]')){F={sort:F.sort,brands:[],sale:false,price:'any'};renderGrid();return}
+ const ua=t.closest('[data-upadd]');if(ua){addLine({id:ua.dataset.upadd,c:0,s:null,q:1},false);return}
+ const ck=t.closest('[data-cookie]');if(ck){store.set('tmp-cookie',ck.dataset.cookie);$('#cookie').classList.remove('on');return}
+ const a=t.closest('[data-add]');if(a){const p=byId[a.dataset.add];addLine({id:p.id,c:0,s:p.st?0:null,q:1});return}
+ const ab=t.closest('[data-addb]');if(ab){addLine({b:ab.dataset.addb,q:1});return}
+ if(t.closest('[data-stickyadd]')){addLine(pdpLine());return}
+ const tab=t.closest('[data-tab]');if(tab){filt=tab.dataset.tab;F.brands=[];renderGrid();return}
+ const cat=t.closest('[data-cat]');if(cat){const k=cat.dataset.cat;filt=['accessories','gadgets'].includes(k)?'acc':k;renderGrid();$('#home-shop').scrollIntoView({behavior:'smooth'});return}
+ const f=t.closest('[data-filter]');if(f&&f.dataset.filter){filt=f.dataset.filter;if(location.hash==='#home-shop'){renderGrid();$('#home-shop').scrollIntoView({behavior:'smooth'})}else setTimeout(renderGrid,0)}
+ const sl=t.closest('[data-sl]');if(sl){go(cur+ +sl.dataset.sl);return}
+ const dt=t.closest('[data-dot]');if(dt)go(+dt.dataset.dot);
+ if(t.closest('[data-login]')){e.preventDefault();show($('#lmodal'))}
+ if(t.closest('[data-review]'))toast('Reviews open once you have verified orders');
+ if(t.closest('#toCheckout')&&cart.length){location.hash='checkout';return}
+ if(t.closest('a[href^="#"]')&&t.closest('.mnav,.search'))closeAll();
+ if(t.closest('[data-close]'))closeAll();
+});
+document.addEventListener('submit',e=>{if(e.target.id==='tradeForm'){e.preventDefault();const f=e.target;let ok=true;[['tModel',v=>v.length>1],['tEmail',v=>/^\S+@\S+\.\S+$/.test(v)]].forEach(([id,fn])=>{const el=$('#'+id),bad=!fn(el.value.trim());el.parentElement.classList.toggle('err',bad);if(bad&&ok){ok=false;el.focus()}});if(!ok)return;
+ f.innerHTML=`<div class="tdone"><div class="ck"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg></div><h3>Request received</h3><p style="color:var(--muted);margin-top:6px">We'll email your trade-in quote shortly.</p></div>`;return}if(e.target.matches('[data-news]')){e.preventDefault();e.target.reset();toast("You're subscribed — welcome to TechMartPro!")}});
+renderCart();syncWish();route();if(store.get('tmp-cookie',null)===null)setTimeout(()=>$('#cookie').classList.add('on'),1200);
+</script>
+</body>
+</html>
